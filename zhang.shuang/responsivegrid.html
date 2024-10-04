@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Grid</title>
+
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" href="css/storetheme.css">
+</head>
+<body>
+
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>Responsive Grid</h1>
+			</div>
+			<div class="flex-stretch"></div>
+
+		    <nav class="flex-none nav">
+			    <ul class="container display-flex">
+				    <li><a href="#article1">Cameras</a></li>
+				    <li><a href="#article2">Storage</a></li>
+				    <li><a href="#article3">Tripods</a></li>
+				    <li><a href="#article4">Cart</a></li>
+				</ul>
+		    </nav>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="card soft">
+			<h2>Responsive Grid</h2>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">column 6</div>
+				<div class="col-xs-12 col-md-6">column 6</div>
+			</div>
+
+			<div class="grid gap xs-small md-medium">
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+
+			<div class="grid ten gap">
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="grid gap xs-small md-medium">
+			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+				<img src="https://placehold.co/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+				<img src="https://placehold.co/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+				<img src="https://placehold.co/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+				<img src="https://placehold.co/500" alt="" class="media-image">
+				</div>
+			</div>
+			
+
+		</div>		
+	</div>
+
+
+    <!-- div.container>article.article#article$*4>h2{Article $}+div.article-body>p*3>lorem40 -->
+	<div class="container">
+		<article class="article card soft" id="article1">
+			<h2>Article 1</h2>
+			<div class="article-body">
+				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
+				<p>Omnis corrupti, aperiam debitis odit? Laudantium, consequatur esse impedit dolore laboriosam nobis distinctio quos. Praesentium accusamus, odit quidem! Beatae veritatis rerum sunt placeat atque sit omnis quaerat quos ab, magni ullam repudiandae sapiente ipsum quam quas incidunt, quis quod, repellendus?</p>
+				<p>Nemo, veniam fuga ab fugit reprehenderit ex ut aspernatur nulla incidunt quis iusto! Consequuntur doloremque, minus consectetur id, error sapiente ipsa atque. Assumenda, necessitatibus reprehenderit reiciendis ad fugit accusamus facilis, esse quae commodi? Dolor odit fuga sunt architecto dicta quas?</p>
+			</div>
+		</article>
+
+		<article class="article card soft" id="article2">
+			<h2>Article 2</h2>
+			<div class="article-body">
+				<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Facere, dolorem, quo? Tempore, adipisci minus delectus facilis cupiditate atque vitae ullam obcaecati ex distinctio doloribus, repudiandae ea iusto asperiores. Ab vero reprehenderit assumenda cupiditate quis repellat nobis nesciunt odio repellendus fugit.</p>
+				<p>Necessitatibus, quam! Velit eum aperiam praesentium blanditiis voluptatibus nemo doloribus, exercitationem rem non fugit architecto numquam distinctio inventore, pariatur enim sapiente id incidunt eos esse sint tempora ipsam culpa totam. Explicabo neque nulla nostrum repudiandae, ipsa minus doloremque, deleniti accusantium.</p>
+				<p>Cupiditate laudantium, magni nihil, fugiat officia culpa officiis quas reiciendis perspiciatis enim ipsam explicabo! Dignissimos obcaecati repudiandae fugiat, cum amet eaque odio optio excepturi aliquid non vero qui quae inventore veritatis mollitia, vel culpa. Libero cupiditate, quo perspiciatis voluptates saepe.</p>
+			</div>
+		</article>
+
+
+		<article class="article card soft" id="article3">
+			<h2>Article 3</h2>
+			<div class="article-body">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, doloremque consequatur magnam eum quaerat rem laudantium qui nesciunt officia expedita nihil praesentium ab itaque ut tempora dignissimos mollitia alias! Animi, unde. Odit, necessitatibus voluptatum error explicabo, maiores at unde eligendi.</p>
+				<p>Autem provident veniam impedit pariatur officiis adipisci laudantium molestiae corporis quisquam cupiditate voluptatibus nobis expedita, fugit. Saepe commodi dolorem consequatur deserunt tempora, assumenda a nam vel quidem, delectus voluptas tenetur, blanditiis quibusdam laborum dolores suscipit rem neque. Iste nostrum, veniam.</p>
+				<p>Ratione totam nam minus tempore commodi molestiae id sequi vitae illum non, suscipit, odit dolor, veniam deserunt quaerat deleniti vero ea laboriosam similique distinctio sit, accusamus. Magnam, explicabo obcaecati praesentium, quia cupiditate rem exercitationem aperiam minus repudiandae, ab eaque sapiente?</p>
+			</div>
+		</article>
+
+		<article class="article card soft" id="article4">
+			<h2>Article 4</h2>
+			<div class="article-body">
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione, exercitationem vero eos cupiditate soluta animi expedita est temporibus provident similique, iste, explicabo facere delectus consequatur consectetur, autem eligendi minus unde. Nulla praesentium voluptates fugiat tempore non cupiditate. Quo, cupiditate.</p>
+				<p>Voluptatibus, vitae totam necessitatibus, recusandae at impedit eligendi nesciunt aut! Blanditiis quasi debitis cum, impedit, voluptas reprehenderit neque provident dolor dignissimos amet animi ad sint voluptate iure facilis officiis nisi velit reiciendis. Distinctio obcaecati, magnam explicabo aut alias odit saepe!</p>
+				<p>Reiciendis, optio, perferendis enim provident culpa voluptas deserunt quod, facere placeat molestiae voluptates unde error quos recusandae. Repellendus nobis et eaque deleniti? Consequatur ad magnam suscipit voluptas corporis fuga similique quaerat. Facere labore temporibus impedit esse quo sapiente hic repellat.</p>
+			</div>
+		</article>
+	</div>
+</body>
+</html>

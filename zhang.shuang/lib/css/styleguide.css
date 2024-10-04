@@ -1,13 +1,17 @@
-/* CSS Reset */
+/* CSS RESET */
 
 *, *::after, *::before {
 	box-sizing: border-box;
 }
 
 :root {
-	--color-neutral-light:#eee;
-	--color-neutral-medium:#999;
-	--color-neutral-dark:black;
+	--color-neutral-light:#F2F2F2;
+	--color-neutral-medium:#D3D3D3;
+	--color-neutral-dark:#0D0D0D;
+
+	--color-main-light:#C3F1FD;
+	--color-main-medium:#05BFF2;
+	--color-main-dark:#0488BC;
 
 	--color-black:#000;
 	--color-white:#fff;
@@ -64,6 +68,13 @@ a:hover {
 .flex-align-center { align-items:center; }
 .felx-justify-center { justify-content:center; }
 
+/* SMALL CLASSES */
+
+.media-image {
+	max-width: 100%;
+	vertical-align: text-bottom;
+}
+
 
 /* COMPONENT CLASSES */
 
@@ -73,6 +84,88 @@ a:hover {
 	margin-bottom: 0;
 	padding-left: 0;
 }
+
+	.nav a {
+		display: block;
+		padding: 0.2em 0.5em;
+	}
+
+	.nav a:hover {
+		background-color: var(--color-main-medium);
+		color: var(--color-white);
+		text-decoration: none;
+	}
+
+	.nav .active a {
+		background-color: var(--color-main-light);
+		color: inherit;
+	}
+
+.nav-material ul,
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+	display: flex;
+}
+
+.nav-material li,
+.nav-stretch li {
+	flex:1 1 auto;
+	text-align: center;
+}
+
+.nav-pills a {
+	border-radius: 2em;
+	padding: 0.5em 1em;
+}
+
+.nav-crumbs a {
+	display: inline-block;
+}
+
+.nav-crumbs .active a,
+.nav-crumbs a:hover {
+	background-color: transparent;
+	color: inherit;
+	text-decoration: underline;
+}
+
+
+.nav-crumbs li:not(:first-child)::before {
+	content: '>';
+}
+
+.nav-material a {
+	padding: 0.5em 1em;
+	position: relative;
+}
+
+.nav-material .active a:{
+	background-color: transparent;
+	color: inherit;
+}
+
+.nav-material a:hover {
+	background-color: var(--color-neutral-light);
+	color: inherit;
+}
+
+.nav-material a::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: var(--color-main-medium);
+	transition: all 0.3s;
+}
+
+.nav-material .active a::after{
+	height: 4px;
+}
+
 
 .navbar {
 	background-color: var(--color-neutral-dark);
@@ -93,7 +186,7 @@ a:hover {
 
 
 
-/* Card */
+/* CARDS */
 
 .card {
 	background-color: var(--color-white);
@@ -145,7 +238,6 @@ a:hover {
 
 /* VIEWWINDOW COMPONENT */
 
-
 .view-window {
 	height: 50vh;
 	position: relative;
@@ -153,5 +245,61 @@ a:hover {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-
 }
+
+/* TABLES */
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td {
+	text-align: left;
+	padding:0.2em 0.5em;
+}
+
+.table.table-striped tbody tr:nth-child(odd) {
+	background-color: var(--color-neutral-light);
+}
+
+.table.table-lined.table-all th:not(:first-child),
+.table.table-lined.table-all td:not(:first-child),
+.table.table-lined.table-vertical th:not(:first-child),
+.table.table-lined.table-vertical td:not(:first-child) {
+	border-left: 1px solid var(--color-neutral-medium);
+}
+
+.table.table-lined.table-all tbody tr,
+.table.table-lined.table-all tbody tr{
+	border-top: 1px solid var(--color-neutral-medium);
+}
+
+.table.table-lined.table-all,
+.table.table-lined.table-border {
+	border: 1px solid var(--color-neutral-medium);
+}
+
+
+
+/* Figures */
+.figure {
+	margin: 0;
+	background-color: var(--color-white);
+}
+
+.figure img {
+	width: 100%;
+	vertical-align: text-bottom;
+}
+.figure figcaption {
+	padding: 1em;
+}
+
+
+
+
+
+
+
+
