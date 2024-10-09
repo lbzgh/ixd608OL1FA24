@@ -78,6 +78,11 @@ a:hover {
 	vertical-align: text-bottom;
 }
 
+.hidden {
+	display: none;
+}
+
+
 
 
 /* COMPONENT CLASSES */

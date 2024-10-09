@@ -34,17 +34,15 @@
 	<!-- Table of Contents -->
 	<div class="container" id="tableofcontents">
 		<br>
-		<h2>Table of Contents</h2>
+		<h1>Table of Contents</h1>
 		<div class="card">
 			<nav class="nav">
 				<ol>
 					<li><a href="#typography">Typography</a></li>
-					
 					<ul>
 						<li><a href="#headings">Headings</a></li>
 						<li><a href="#paragraphs">Paragraphs</a></li>
 					</ul>
-					
 					<li><a href="#cards">Cards</a></li>
 					<li><a href="#viewwindow">View Window</a></li>
 					<li><a href="#navigations">Navigations</a></li>
@@ -53,15 +51,15 @@
 					<li><a href="#tables">Tables</a></li>
 					<li><a href="#figures">Figures</a></li>
 					<li><a href="#forms">Forms</a></li>
-					
 					<ul>
 						<li><a href="#inputs">Inputs</a></li>
 						<li><a href="#labels">Labels</a></li>
 						<li><a href="#controls">Controls</a></li>
-						<li><a href="#buttons">Buttons</a></li>
-						<li><a href="#hot-dog">Hotdog</a></li>
-						<li><a href="#select">Select</a></li>
 					</ul>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#hot-dog">Hotdog</a></li>
+					<li><a href="#select">Select</a></li>
+					<li><a href="#checkboxes">Checkboxes</a></li>
 				</ol>
 			</nav>
 		</div>
@@ -70,7 +68,7 @@
 	<!-- Typo -->
 	<div class="container" id="typography">
 		<br>
-		<h2>1. Typography</h2>
+		<h1>1. Typography</h1>
 
 		<div class="card soft" id="headings">
 		    <h3>Headings</h3>
@@ -93,7 +91,7 @@
 	<!-- Cards -->
 	<div class="container" id="cards">
 		<br>
-		<h2>2. Cards</h2>
+		<h1>2. Cards</h1>
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-3">
@@ -125,7 +123,7 @@
 	<!-- View Window -->
 	<div class="container" id="viewwindow">
 		<br>
-		<h2>3. View Window</h2>
+		<h1>3. View Window</h1>
 		<div class="view-window" style="background-image: url('../img/50percentoff.jpg')">
 	</div>
 	</div>
@@ -133,7 +131,7 @@
 
 	<div class="container" id="navigations">
 		<br>
-		<h2>4. Navigations</h2>
+		<h1>4. Navigations</h1>
 
 		<script>
         	const makeNav = (classes = '') => {
@@ -196,14 +194,14 @@
 
 	<div class="container" id="gridsystem">
 		<br>
-		<h2>5. Grid System</h2>
+		<h1>5. Grid System</h1>
 	</div>
 
 
 
 	<div class="container" id="flexsystem">
 		<br>
-		<h2>6. Flex System</h2>
+		<h1>6. Flex System</h1>
 	</div>
 
 
@@ -233,7 +231,7 @@
 
 	<div class="container" id="tables">
 		<br>
-		<h2>7. Tables</h2>
+		<h1>7. Tables</h1>
 
 		<div class="card soft">
 			<h3>Table - Basic</h3>
@@ -274,7 +272,7 @@
 	<!-- Figures -->
 	<div class="container" id="figures">
 		<br>
-		<h2>8. Figures</h2>
+		<h1>8. Figures</h1>
 		<div class="card soft">
 			<h3>Basic Figure</h3>
 			<figure class="figure">
@@ -385,7 +383,7 @@
 	
 	<div class="container" id="forms">
 		<br>
-		<h2>9. Forms</h2>
+		<h1>9. Forms</h1>
 		
 		<h3 id="inputs">Inputs</h3>
 
@@ -460,7 +458,7 @@
 		</div>
 
 		<br>
-		<h3 id="buttons">Buttons</h3>
+		<h1 id="buttons">10. Buttons</h1>
 		<div class="card soft">
 			<h3>Default Buttons</h3>
 			<button>Click Me</button>
@@ -481,7 +479,7 @@
 		</div>
 
 		<br>
-		<h3 id="hot-dog">Hotdog</h2>
+		<h1 id="hot-dog">11. Hotdog</h1>
 		<div class="card soft">
 			<div class="form-control">
 				<form>
@@ -513,7 +511,7 @@
 		</div>
 
 		<br>
-		<h3 id="select">Select</h3>
+		<h1 id="select">12. Select</h1>
 
 		<div class="card soft">
 			<div class="form-select">
@@ -538,12 +536,24 @@
 		</div>
 
 		<br>
-		<h3 id="checkboxes">Check Boxes</h3>
+		<h1 id="checkboxes">13. Checkboxes</h1>
 
 		<div class="card soft">
-			<input type="checkbox">
+			<h3>Basic Checkbox</h3>
+			<label>Label<input type="checkbox" id="input-1"></label>
+			<br>
+			<label for="input-1">Label</label>
+
+			<br>
+			<h3>Heart Checkbox</h3>
+			<div class="favorite">
+				<input type="checkbox"  id="heart-example" class="hidden">
+				<label for="heart-example">&hearts;</label>
+
+
+			</div>
 		</div>
-	
+
 
 
 	</div>
