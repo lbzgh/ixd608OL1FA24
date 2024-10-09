@@ -10,6 +10,7 @@
 
 body {
 	background-color: var(--color-offwhite);
+	padding-bottom: 0;
 }
 
 
@@ -106,9 +107,4 @@ body {
 		padding-left: 0;
 	}
 }
-
-
-
-
-
 

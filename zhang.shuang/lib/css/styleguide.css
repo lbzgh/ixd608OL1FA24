@@ -19,8 +19,8 @@
 	--header-height:3rem;
 	--spacing::1rem;
 
-	--font-serif: Georgia, "Times New Roman", serif;
-	--font-sans: Helvetica, Arial, sans-serif;
+	--font-serif: Didot, Georgia, serif;
+	--font-sans: "Proxima Nova", Arial, sans-serif;
 }
 
 body {
@@ -49,10 +49,11 @@ a:hover {
 }
 
 
+
 /* LAYOUT CLASSES */
 
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -68,12 +69,15 @@ a:hover {
 .flex-align-center { align-items:center; }
 .felx-justify-center { justify-content:center; }
 
+
+
 /* SMALL CLASSES */
 
 .media-image {
 	max-width: 100%;
 	vertical-align: text-bottom;
 }
+
 
 
 /* COMPONENT CLASSES */
@@ -91,14 +95,14 @@ a:hover {
 	}
 
 	.nav a:hover {
-		background-color: var(--color-main-medium);
-		color: var(--color-white);
+		background-color: var(--color-neutral-medium);
+		color: var(--color-neutral-dark);
 		text-decoration: none;
 	}
 
 	.nav .active a {
-		background-color: var(--color-main-light);
-		color: inherit;
+		background-color: var(--color-neutral-dark);
+		color: var(--color-neutral-light);
 	}
 
 .nav-material ul,
@@ -175,16 +179,28 @@ a:hover {
 }
 
 .navbar h1 {
-	font-size: 1em;
+	font-size: 1.5em;
 	margin: 0;
 	font-family: var(--font-sans);
 }
 
-.navbar a {
-	padding: 0 0.5em;
+.site-name .navbar a {
+	padding: 0.5em 0.5em;
 }
 
+footer{
+	background-color: var(--color-neutral-dark);
+	color: var(--color-white);
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 4em;
+}
 
+footer a {
+	padding: 1em;
+}
 
 /* CARDS */
 
@@ -236,6 +252,7 @@ a:hover {
 }
 
 
+
 /* VIEWWINDOW COMPONENT */
 
 .view-window {
@@ -246,6 +263,8 @@ a:hover {
 	background-position: center;
 	background-attachment: fixed;
 }
+
+
 
 /* TABLES */
 .table {
@@ -271,7 +290,7 @@ a:hover {
 }
 
 .table.table-lined.table-all tbody tr,
-.table.table-lined.table-all tbody tr{
+.table.table-lined.table-horizontal tbody tr{
 	border-top: 1px solid var(--color-neutral-medium);
 }
 
@@ -282,7 +301,7 @@ a:hover {
 
 
 
-/* Figures */
+/* FIGURES */
 .figure {
 	margin: 0;
 	background-color: var(--color-white);
@@ -298,8 +317,89 @@ a:hover {
 
 
 
+/* FORMS */
+
+.form-control {
+	margin: 1em 0;
+}
+
+.form-select>select,
+.hotdog,
+.hotdog input,
+.form-button,
+.form-input,
+.form-item {
+	display: inline-block;
+	background-color: transparent;
+	border-width: 0;
+	font: inherit;
+	-webkit-appeatance: none;
+	color: inherit;
+	width: 100%;
+	outline: 0;
+}
+
+.form-input {
+	border-bottom: 1px solid var(--color-neutral-medium);
+	padding: 0.5em 1em;
+}
+
+.form-input:focus {
+	border-bottom-color: var(--color-main-light);
+}
+
+.form-label {
+	font-size: 0.8em;
+	color: var(--color-neutral-medium);
+	display: block;
+	width: 100%;
+}
+
+.form-button {
+	background-color: var(--color-neutral-light);
+	padding: 0.5em 1em;
+	border-radius: 0.3em;
+	cursor: pointer;
+	text-align: center;
+}
+
+.form-button:hover {
+	text-decoration: none;
+	background-color: var(--color-neutral-medium);
+}
+
+.form-button:active {
+	background-color: var(--color-main-light);
+}
+
+.hotdog {
+	background-color: var(--color-neutral-light);
+	border-radius: 2em;
+	padding: 0.5em 1.5em;
+	display: flex;
+}
+
+.hotdog.dark {
+	background-color: var(--color-neutral-dark);
+	color: var(--color-neutral-light);
+}
+
+.hotdog.light {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
 
 
 
+.form-select>select {
+	padding: 0.5em 1em;
+	background-color: var(--color-neutral-light);
+	border-radius: 0.3em;
+	cursor: pointer;
+}
+
+.form-select {
+	position: relative;
+}
 
 

@@ -4,20 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>CSS Styleguide</title>
+	<title>CSS Styleguide (Shuang)</title>
 
 	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" href="../css/storetheme.css">
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="../js/custom.js"></script>
 </head>
 
 <body>
 	<!-- header>h1+p -->
 	<header class="navbar">
 		<div class="container display-flex">
-			<div class="flex-none">
+			<div class="flex-none site-name">
 				<h1>Style Guide</h1>
 			</div>
 			<div class="flex-stretch"></div>
@@ -32,6 +33,7 @@
 
 	<!-- Table of Contents -->
 	<div class="container" id="tableofcontents">
+		<br>
 		<h2>Table of Contents</h2>
 		<div class="card">
 			<nav class="nav">
@@ -50,6 +52,16 @@
 					<li><a href="#flexsystem">Flex System</a></li>
 					<li><a href="#tables">Tables</a></li>
 					<li><a href="#figures">Figures</a></li>
+					<li><a href="#forms">Forms</a></li>
+					
+					<ul>
+						<li><a href="#inputs">Inputs</a></li>
+						<li><a href="#labels">Labels</a></li>
+						<li><a href="#controls">Controls</a></li>
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#hot-dog">Hotdog</a></li>
+						<li><a href="#select">Select</a></li>
+					</ul>
 				</ol>
 			</nav>
 		</div>
@@ -57,7 +69,8 @@
 
 	<!-- Typo -->
 	<div class="container" id="typography">
-		<h2>Typography</h2>
+		<br>
+		<h2>1. Typography</h2>
 
 		<div class="card soft" id="headings">
 		    <h3>Headings</h3>
@@ -79,7 +92,8 @@
 
 	<!-- Cards -->
 	<div class="container" id="cards">
-		<h2>Cards</h2>
+		<br>
+		<h2>2. Cards</h2>
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-3">
@@ -110,18 +124,20 @@
 
 	<!-- View Window -->
 	<div class="container" id="viewwindow">
-		<h2>View Window</h2>
+		<br>
+		<h2>3. View Window</h2>
 		<div class="view-window" style="background-image: url('../img/50percentoff.jpg')">
 	</div>
 	</div>
 
 
 	<div class="container" id="navigations">
-		<h2>Navigations</h2>
+		<br>
+		<h2>4. Navigations</h2>
 
 		<script>
         	const makeNav = (classes = '') => {
-            const links = ['home', 'store', 'about'];
+            const links = ['Home', 'Store', 'About'];
             let ran = Math.floor(Math.random() * links.length);
             document.write(`
             <div>
@@ -179,13 +195,15 @@
 
 
 	<div class="container" id="gridsystem">
-		<h2>Grid System</h2>
+		<br>
+		<h2>5. Grid System</h2>
 	</div>
 
 
 
 	<div class="container" id="flexsystem">
-		<h2>Flex System</h2>
+		<br>
+		<h2>6. Flex System</h2>
 	</div>
 
 
@@ -214,7 +232,8 @@
 	</script>
 
 	<div class="container" id="tables">
-		<h2>Tables</h2>
+		<br>
+		<h2>7. Tables</h2>
 
 		<div class="card soft">
 			<h3>Table - Basic</h3>
@@ -253,112 +272,291 @@
 	</div>
 
 	<!-- Figures -->
-	<h2 id="figures">Figures</h2>
-	<div class="card">
-		<h3>Basic Figure</h3>
-
-		<figure class="figure">
-			<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-		<figcaption>Product</figcaption>
-		</figure>	
-	</div>
-
-	<h3>Figure Grid</h3>
-	<div class="grid gap">
-		<div class="col-xs-12 col-md-4">
+	<div class="container" id="figures">
+		<br>
+		<h2>8. Figures</h2>
+		<div class="card soft">
+			<h3>Basic Figure</h3>
 			<figure class="figure">
-			<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-			<figcaption>Product</figcaption>
-			</figure>
-		</div>
-
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure">
-			<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-			<figcaption>Product</figcaption>
-			</figure>
-		</div>
-
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure">
-			<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-			<figcaption>Product</figcaption>
-			</figure>
-		</div>
-	</div>
-
-	<h3>Product Grid</h3>
-	<div class="grid gap">
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product">
-			<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-			<figcaption> 
-				<div>Product Name</div>
-				<div>$100.00</div>
-			</figcaption>
-			</figure>
-		</div>
-
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product">
-			<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-			<figcaption> 
-				<div>Product Name</div>
-				<div>$100.00</div>
-			</figcaption>
-			</figure>
-		</div>
-
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product">
-			<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-			<figcaption> 
-				<div>Product Name</div>
-				<div>$100.00</div>
-			</figcaption>
-			</figure>
-		</div>
-	</div>
-
-	<h3>Product Overlay</h3>
-	<div class="grid gap">
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product-overlay">
 				<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-				<figcaption> 
-					<div class="caption-body">
+				<figcaption>Product</figcaption>
+			</figure>
+		</div>
+
+		<br>
+		<h3>Figure Grid</h3>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure">
+					<img src="https://placehold.co/200x300?text=product" alt="Product Image">
+					<figcaption>Product</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure">
+					<img src="https://placehold.co/200x300?text=product" alt="Product Image">
+					<figcaption>Product</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure">
+					<img src="https://placehold.co/200x300?text=product" alt="Product Image">
+					<figcaption>Product</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<br>
+		<h3>Product Grid</h3>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://placehold.co/200x300?text=product" alt="Product Image">
+					<figcaption> 
 						<div>Product Name</div>
 						<div>$100.00</div>
-					</div>
-				</figcaption>
-			</figure>
-		</div>
+					</figcaption>
+				</figure>
+			</div>
 
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product-overlay">
-				<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-				<figcaption> 
-					<div class="caption-body">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://placehold.co/200x300?text=product" alt="Product Image">
+					<figcaption> 
 						<div>Product Name</div>
 						<div>$100.00</div>
-					</div>
-				</figcaption>
-			</figure>
-		</div>
+					</figcaption>
+				</figure>
+			</div>
 
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product-overlay">
-				<img src="https://placehold.co/200x300?text=product" alt="Product Image">
-				<figcaption> 
-					<div class="caption-body">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://placehold.co/200x300?text=product" alt="Product Image">
+					<figcaption> 
 						<div>Product Name</div>
 						<div>$100.00</div>
-					</div>
-				</figcaption>
-			</figure>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<br>
+		<h3>Product Overlay</h3>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://placehold.co/200x300?text=product" alt="Product Image">
+					<figcaption> 
+						<div class="caption-body">
+							<div>Product Name</div>
+							<div>$100.00</div>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://placehold.co/200x300?text=product" alt="Product Image">
+					<figcaption> 
+						<div class="caption-body">
+							<div>Product Name</div>
+							<div>$100.00</div>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://placehold.co/200x300?text=product" alt="Product Image">
+					<figcaption> 
+						<div class="caption-body">
+							<div>Product Name</div>
+							<div>$100.00</div>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
 		</div>
 	</div>
+	
+	<div class="container" id="forms">
+		<br>
+		<h2>9. Forms</h2>
+		
+		<h3 id="inputs">Inputs</h3>
 
+		<div class="card soft">
+			<h3>Default Input</h3>
+			<form>
+				<input type="text"> (Text)<br>
+				<input type="number"> (Number)<br>
+				<input type="password"> (Password)<br>
+				<input type="url"> (URL)<br>
+				<input type="email"> (Email)<br>
+				<input type="datetime-local"> (Date Time - Local)<br>
+				<input type="date"> (Date)<br>
+				<input type="search"> (Search)<br>
+			</form>
+
+			<br>
+			<h3>Form Input</h3>
+			<form>
+				<input type="text" placeholder="Text" class="form-input">
+				<input type="number" placeholder="Number" class="form-input">
+				<input type="password" placeholder="Password" class="form-input">
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+
+			<br>
+			<h3 id="labels">Form Label</h3>
+			<form>
+				<label class="form-label">Text</label>
+				<input type="text" placeholder="Text" class="form-input">
+				<label class="form-label">Number</label>
+				<input type="number" placeholder="Number" class="form-input">
+				<label class="form-label">Password</label>
+				<input type="password" placeholder="Password" class="form-input">
+				<label class="form-label">Search</label>
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+
+			<br>
+			<h3 id="controls">Form Control</h3>
+			<form>
+				<div class="form-control">
+					<label class="form-label">Text</label>
+					<input type="text" placeholder="Text" class="form-input">
+				</div>
+				
+				<div class="form-control">
+					<label class="form-label">Number</label>
+					<input type="number" placeholder="Number" class="form-input">
+				</div>
+				
+				<div class="form-control">
+					<label class="form-label">Password</label>
+					<input type="password" placeholder="Password" class="form-input">
+				</div>
+				
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none">
+						<label class="form-label">Search</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" placeholder="Search" class="form-input">
+					</div>
+					<div class="flex-none">
+						<label class="form-label">Search</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" placeholder="Search" class="form-input">
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<br>
+		<h3 id="buttons">Buttons</h3>
+		<div class="card soft">
+			<h3>Default Buttons</h3>
+			<button>Click Me</button>
+
+			<!-- The default look of an element should not be the reason to use it. -->
+			<br>
+			<h3> Form Buttons</h3>
+
+			<div class="form-control">
+				<button type="button" class="form-button">Form Button</button>
+			</div>
+			<div class="form-control">
+				<input type="button" class="form-button" value="Input">
+			</div>
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+		</div>
+
+		<br>
+		<h3 id="hot-dog">Hotdog</h2>
+		<div class="card soft">
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog dark" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="card dark">
+					<input type="search" class="hotdog light" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="hotdog">
+					<span>&equiv;</span>
+					<input type="search" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="hotdog">
+					<input type="search" placeholder="Search">
+					<span>&equiv;</span>
+				</form>
+			</div>
+		</div>
+
+		<br>
+		<h3 id="select">Select</h3>
+
+		<div class="card soft">
+			<div class="form-select">
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+			</div>
+			<div class="display-flex">
+				<div class="flex-stretch"></div>
+				<div class="flex-none">
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<h3 id="checkboxes">Check Boxes</h3>
+
+		<div class="card soft">
+			<input type="checkbox">
+		</div>
+	
+
+
+	</div>
+
+
+
+
+
+  	<footer>
+    	<a class="footer" href="index.html">
+      	Copyright © 2024 All Rights Reserved by Shuang Zhang
+    	</a>
+  	</footer>
 </body>
 
 </html>
