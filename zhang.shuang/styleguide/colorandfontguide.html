@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Color and Font</title>
+
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="../js/custom.js"></script>
+</head>
+
+<body>
+	<!-- header>h1+p -->
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none  text-style-9">
+				<h1>Style Guide</h1>
+			</div>
+			<div class="flex-stretch"></div>
+
+		    <nav class="flex-none nav">
+			    <ul class="container display-flex text-style-4">
+				    <li><a href="#tableofcontents"><h1>Table of Contents</h1></a></li>
+				</ul>
+		    </nav>
+		</div>
+	</header>
+
+	<main>
+	<!-- Table of Contents -->
+		<div class="container" id="tableofcontents">
+			<h1 class="text-style-8">Table of Contents</h1>
+			<div class="card">
+				<nav class="nav">
+					<ul>
+						<li><a href="#typography">Fonts</a></li>
+						<ul>
+							<li><a href="#headings">Headings</a></li>
+							<li><a href="#paragraphs">Paragraphs</a></li>
+						</ul>
+						<li><a href="#colors">Colors</a></li>
+						<ul>
+							<li><a href="#neutral-colors">Neutral Colors</a></li>
+							<li><a href="#main-colors">Main Colors</a></li>
+							<li><a href="#accent-colors">Accent Colors</a></li>
+						</ul>
+						<li><a href="index.html" class="text-style-2">Main Style Guide</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Typo -->
+		<div class="container" id="typography">
+			<br>
+			<h1 class="text-style-8">1. Fonts</h1>
+
+			<div class="card soft" id="headings">
+			    <h3>Headings</h3>
+			    <h1>Heading 1 - Didot, Georgia, serif</h1>
+			    <h2>Heading 2 - Didot, Georgia, serif</h2>
+			    <h3>Heading 3 - Didot, Georgia, serif</h3>
+			    <h4>Heading 4 - Didot, Georgia, serif</h4>
+			    <h5>Heading 5 - Didot, Georgia, serif</h5>
+			    <h6>Heading 6 - Didot, Georgia, serif</h6>
+			</div>
+
+			<div class="card soft" id="paragraphs">
+			    <h3>Paragraphs</h3>
+			    <p>Paragraphs - Proxima Nova, Arial, sans-serif</p>
+			    <p>Proxima Nova is the primary paragraph typeface. This is a good fit for photography branding because of its modern, neutral, and highly readable nature. It's conveys a feeling of precision and technology. I will use it for product descriptions, specifications, and UI/UX elements to ensure clarity, functionality, and legibility.</p>
+			    <p>Arial is the alternative typeface for paragraphs. This is a web-safe sans serif font that is clean, modern, and highly legible.</p>
+			    <br>
+			    <p>Headings - Didot, Georgia, serif</p>
+			    <p>Didot is the primary typeface for Headings. Known for its elegance and luxury appeal, Didot is often associated with high-end, artistic branding. I will use this font as headings and titles.</p>
+			    <p>Georgia is the alternative for headings. This is a web-safe serif font with a classic feel, and it’s highly readable and widely supported.</p>
+			</div>
+		</div>
+
+		<!-- Colors -->
+		<div class="container">
+				<br>
+				<h1 class="text-style-8" id="colors">2. Colors</h1>
+				<div class="card soft">
+					<h3 id="neutral-colors">Neutral Colors</h3>
+					<div class="grid gap">
+						<div class="col-xs-12 col-md-6">
+							<div class="card hard bg-white"><br><br>1. White #FCFCFC</div>
+						</div>
+		
+						<div class="col-xs-12 col-md-6">
+							<div class="card hard bg-black"><br><br>2. Black #0D0D0D</div>
+						</div>
+		
+						<div class="col-xs-12 col-md-4">
+							<div class="card hard bg-neu-light"><br><br>3. Neutral Light  #F2F2F2</div>
+						</div>
+		
+						<div class="col-xs-12 col-md-4">
+							<div class="card hard bg-neu-medium"><br><br>4. Neutral Medium #D3D3D3</div>
+						</div>
+		
+						<div class="col-xs-12 col-md-4">
+							<div class="card hard bg-neu-dark"><br><br>5. Neutral Dark #8C8C8C</div>
+						</div>
+					</div>
+
+					<br>
+					<h3 id="main-colors">Main Colors</h3>
+					<div class="grid gap">
+						<div class="col-xs-12 col-md-4">
+							<div class="card hard bg-main-light"><br><br>6. Main Light #AFECFD</div>
+						</div>
+		
+						<div class="col-xs-12 col-md-4">
+							<div class="card hard bg-main-medium"><br><br>7. Main Medium #05BFF2</div>
+						</div>
+
+						<div class="col-xs-12 col-md-4">
+							<div class="card hard bg-main-dark"><br><br>8. Main Dark #0488BC</div>
+						</div>
+					</div>
+
+					<br>
+					<h3 id="accent-colors">Accent Colors</h3>
+					<div class="grid gap">
+						<div class="col-xs-12 col-md-4">
+							<div class="card hard bg-acc-light"><br><br>9. Accent Light #D13C2E</div>
+						</div>
+		
+						<div class="col-xs-12 col-md-4">
+							<div class="card hard bg-acc-medium"><br><br>10. Accent Medium #A83227</div>
+						</div>
+
+						<div class="col-xs-12 col-md-4">
+							<div class="card hard bg-acc-dark"><br><br>11. Accent Dark #6A1E18</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</main>
+
+	<footer>
+    	<a class="footer" href="colorandfontguide.html">
+      	Copyright © 2024 All Rights Reserved by Shuang Zhang
+    	</a>
+  	</footer>
+</body>
+
+</html>
