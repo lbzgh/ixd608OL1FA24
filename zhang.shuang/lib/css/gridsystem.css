@@ -3,9 +3,9 @@
 	grid-template-columns: repeat(12, 1fr);
 }
 
-	.grid.ten {
-		grid-template-columns: repeat(10, 1fr);
-	}
+.grid.ten {
+	grid-template-columns: repeat(10, 1fr);
+}
 
 .grid.gap {
 	--grid-gap:1em;

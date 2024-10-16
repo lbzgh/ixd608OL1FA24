@@ -1,31 +1,41 @@
 
 :root {
-	--color-offwhite: #f4f4f4;
+	--color-white: #FCFCFC;
 
-	--color-main-light:#C3F1FD;
-	--color-main-medium:#05BFF2;
-	--color-main-dark:#0488BC;
+	--color-main-light: #A4D8FF;
+	--color-main-medium: #2997FF;
+  	--color-main-dark: #005BB5;
 }
 
 
 body {
-	background-color: var(--color-offwhite);
+	background-color: var(--color-white);
 	padding-bottom: 0;
 }
 
-.favorite label {
+.heart label {
 	transition: all 0.3s;
 	display: inline-block;
 	transform: scale(1,1);
 	color: var(--color-neutral-medium);
 }
 
-.favorite input:checked + label {
-	 color: orangered;
-	 transform: scale(1.3,1.3);
+.heart input:checked + label {
+	 color: var(--color-accent-medium);
+	 transform: scale(1.2,1.2);
 }
 
+.star label {
+	transition: all 0.3s;
+	display: inline-block;
+	transform: scale(1,1);
+	color: var(--color-neutral-medium);
+}
 
+.star input:checked + label {
+	 color: var(--color-secondary-dark);
+	 transform: scale(1.2,1.2);
+}
 
 
 @media (max-width:800px) {

@@ -10,23 +10,26 @@
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" href="../css/storetheme.css">
 
+	<link rel="stylesheet" href="https://use.typekit.net/xpu1iem.css">
+
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="../js/custom.js"></script>
 </head>
-
+stret
 <body>
 	<!-- header>h1+p -->
 	<header class="navbar">
 		<div class="container display-flex">
-			<div class="flex-none text-style-9">
+			<div class="flex-none text-color-1 kerning-1">
 				<h1>Style Guide</h1>
 			</div>
 				
 			<div class="flex-stretch">
 			</div>
 		    <nav class="flex-none nav">
-			    <ul class="container display-flex text-style-4">
-				    <li><a href="#tableofcontents"><h1>Table of Contents</h1></a></li>
+			    <ul class="container display-flex flex-align-center text-color-3">
+				    <li><a href="colorandfontguide.html"><h2>Technical Details</h2></a></li>
+				    <li><a href="#tableofcontents"><h2>Table of Contents</h2></a></li>
 				</ul>
 		    </nav>
 		</div>
@@ -35,7 +38,7 @@
 	<main>
 		<!-- Table of Contents -->
 		<div class="container" id="tableofcontents">
-			<h1 class="text-style-8">Table of Contents</h1>
+			<h1 >Table of Contents</h1>
 			<div class="card">
 				<nav class="nav">
 					<ol>
@@ -44,7 +47,6 @@
 						<ul>
 							<li><a href="#headings">Headings</a></li>
 							<li><a href="#paragraphs">Paragraphs</a></li>
-							<li><a href="colorandfontguide.html">*Details of Fonts & Colors</a></li>
 						</ul>
 
 						<li><a href="#cards">Cards</a></li>
@@ -80,10 +82,10 @@
 		<!-- Typo -->
 		<div class="container" id="typography">
 			<br>
-			<h1 class="text-style-8">1. Typography</h1>
+			<h1>1. Typography</h1>
 
 			<div class="card soft" id="headings">
-			    <h3>Headings</h3>
+			    <h2>Headings</h2>
 			    <h1>Heading 1</h1>
 			    <h2>Heading 2</h2>
 			    <h3>Heading 3</h3>
@@ -93,7 +95,7 @@
 			</div>
 
 			<div class="card soft" id="paragraphs">
-			    <h3>Paragraphs</h3>
+			    <h2>Paragraphs</h2>
 			    <p class="leading-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem deserunt officiis dolorem, cupiditate accusantium quibusdam voluptas aut iste corporis necessitatibus veritatis nostrum ratione harum eligendi perspiciatis amet praesentium eveniet.</p>
 			    <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. A eaque adipisci optio at dolorem alias, rem culpa distinctio expedita tempore eius fuga facere reprehenderit inventore ipsam quia ratione, nobis, officiis?</p>
 			    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque, iste optio laboriosam! Voluptas, architecto eos iure, delectus provident animi, voluptates impedit libero expedita earum voluptatibus aperiam ea natus!</p>
@@ -103,31 +105,135 @@
 		<!-- Cards -->
 		<div class="container" id="cards">
 			<br>
-			<h1 class="text-style-8">2. Cards</h1>
+			<h1>2. Cards</h1>
 
-			<div class="grid gap">
-				<div class="col-xs-12 col-md-3">
-					<div class="card">Card</div>
+			<div class="card soft">
+				<h2>Basic Cards</h2>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-6">
+						<div class="card">Card</div>
+					</div>
+		
+					<div class="col-xs-12 col-md-6">
+						<div class="card flat">Card Flat</div>
+					</div>
+
+					<div class="col-xs-12 col-md-6">
+						<div class="card soft">Card Soft</div>
+					</div>
+	
+					<div class="col-xs-12 col-md-6">
+						<div class="card hard">Card Hard</div>
+					</div>
 				</div>
+			</div>
 
-				<div class="col-xs-12 col-md-4">
-					<div class="card soft">Card Soft</div>
-				</div>
+			<div class="card soft">
+				<h2>Colorful Cards</h2>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-3">
+						<div class="card bg-white">Card with Background Color</div>
+					</div>
 
-				<div class="col-xs-12 col-md-4">
-					<div class="card hard">Card Hard</div>
-				</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="card bg-neu-medium">Card with Background Color</div>
+					</div>
 
-				<div class="col-xs-12 col-md-4">
-					<div class="card flat">Card Flat</div>
-				</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="card bg-neu-dark">Card with Background Color</div>
+					</div>
 
-				<div class="col-xs-12 col-md-4">
-					<div class="card dark">Card Dark</div>
-				</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="card bg-black">Card with Background Color</div>
+					</div>
 
-				<div class="col-xs-12 col-md-4">
-					<div class="card medium">Card Medium</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="card bg-main-light">Card with Background Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bg-main-medium">Card with Background Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bg-main-dark">Card with Background Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bg-sec-light">Card with Background Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bg-sec-medium">Card with Background Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bg-sec-dark">Card with Background Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bg-acc-light">Card with Background Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bg-acc-medium">Card with Background Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bg-acc-dark">Card with Background Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<div class="card bd-white">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<div class="card bd-neu-light">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<div class="card bd-neu-dark">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<div class="card bd-black">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bd-main-light">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bd-main-medium">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bd-main-dark">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bd-sec-light">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bd-sec-medium">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bd-sec-dark">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bd-acc-light">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bd-acc-medium">Card with Border Color</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<div class="card bd-acc-dark">Card with Border Color</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -135,15 +241,15 @@
 		<!-- View Window -->
 		<div class="container" id="viewwindow">
 			<br>
-			<h1 class="text-style-8">3. View Window</h1>
-			<div class="view-window" style="background-image: url('../img/50percentoff.jpg')">
+			<h1>3. View Window</h1>
+			<div class="view-window" style="background-image: url('../img/camera03.jpeg')">
 		</div>
 		</div>
 
 
 		<div class="container" id="navigations">
 			<br>
-			<h1 class="text-style-8">4. Navigations</h1>
+			<h1>4. Navigations</h1>
 
 			<script>
 	        	const makeNav = (classes = '') => {
@@ -164,32 +270,32 @@
 	    	</script>
 
 			<div class="card soft">
-				<h3>Basic Nav</h3>
+				<h2>Basic Nav</h2>
 				<script>makeNav('nav')</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Flex Nav</h3>
+				<h2>Flex Nav</h2>
 				<script>makeNav('nav nav-flex')</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Stretch Nav</h3>
+				<h2>Stretch Nav</h2>
 				<script>makeNav('nav stretch-flex')</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Pills Nav</h3>
+				<h2>Pills Nav</h2>
 				<script>makeNav('nav nav-pills')</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Crumbs Nav</h3>
+				<h2>Crumbs Nav</h2>
 				<script>makeNav('nav nav-crumbs')</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Material Nav</h3>
+				<h2>Material Nav</h2>
 				<script>makeNav('nav nav-material')</script>
 			</div>
 
@@ -206,14 +312,239 @@
 
 		<div class="container" id="gridsystem">
 			<br>
-			<h1 class="text-style-8">5. Grid System</h1>
+			<h1>5. Grid System</h1>
+			<div class="card soft">
+				<h2>For Display Width ≥ XSmall</h2>
+				<div class="grid gap">
+					<div class="col-xs-12 card soft bd-sec-medium">Span 12</div>
+					<div class="col-xs-6 card soft bd-sec-medium">Span 6</div>
+					<div class="col-xs-6 card soft bd-sec-medium">Span 6</div>
+					<div class="col-xs-4 card soft bd-sec-medium">Span 4</div>
+					<div class="col-xs-4 card soft bd-sec-medium">Span 4</div>
+					<div class="col-xs-4 card soft bd-sec-medium">Span 4</div>
+					<div class="col-xs-3 card soft bd-sec-medium">Span 3</div>
+					<div class="col-xs-3 card soft bd-sec-medium">Span 3</div>
+					<div class="col-xs-3 card soft bd-sec-medium">Span 3</div>
+					<div class="col-xs-3 card soft bd-sec-medium">Span 3</div>
+					<div class="col-xs-2 card soft bd-sec-medium">Span 2</div>
+					<div class="col-xs-2 card soft bd-sec-medium">Span 2</div>
+					<div class="col-xs-2 card soft bd-sec-medium">Span 2</div>
+					<div class="col-xs-2 card soft bd-sec-medium">Span 2</div>
+					<div class="col-xs-2 card soft bd-sec-medium">Span 2</div>
+					<div class="col-xs-2 card soft bd-sec-medium">Span 2</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+					<div class="col-xs-1 card soft bd-sec-medium">Span</div>
+				</div>
+			</div>
+			<div class="card soft">
+				<h2>For Display Width ≥ Medium</h2>
+				<div class="grid gap">
+					<div class="col-md-12 card soft bd-acc-light">Span 12</div>
+					<div class="col-md-6 card soft bd-acc-light">Span 6</div>
+					<div class="col-md-6 card soft bd-acc-light">Span 6</div>
+					<div class="col-md-4 card soft bd-acc-light">Span 4</div>
+					<div class="col-md-4 card soft bd-acc-light">Span 4</div>
+					<div class="col-md-4 card soft bd-acc-light">Span 4</div>
+					<div class="col-md-3 card soft bd-acc-light">Span 3</div>
+					<div class="col-md-3 card soft bd-acc-light">Span 3</div>
+					<div class="col-md-3 card soft bd-acc-light">Span 3</div>
+					<div class="col-md-3 card soft bd-acc-light">Span 3</div>
+					<div class="col-md-2 card soft bd-acc-light">Span 2</div>
+					<div class="col-md-2 card soft bd-acc-light">Span 2</div>
+					<div class="col-md-2 card soft bd-acc-light">Span 2</div>
+					<div class="col-md-2 card soft bd-acc-light">Span 2</div>
+					<div class="col-md-2 card soft bd-acc-light">Span 2</div>
+					<div class="col-md-2 card soft bd-acc-light">Span 2</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+					<div class="col-md-1 card soft bd-acc-light">Span</div>
+				</div>
+			</div>
 		</div>
 
 
 
 		<div class="container" id="flexsystem">
 			<br>
-			<h1 class="text-style-8">6. Flex System</h1>
+			<h1>6. Flex System</h1>
+			<div class="card soft">
+				<h2>Display Flex</h2>
+				<div class="container display-flex">
+					<div class="card soft bd-main-light">
+						<p>Container 1</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container display-flex">
+					<div class="card soft bd-main-light">
+						<p>Container 2</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container flex-none">
+					<div class="card soft bd-main-light">
+						<p>Container 3</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>Flex None</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card soft">
+				<h2>Display inline Flex</h2>
+				<div class="container display-inline-flex">
+					<div class="card soft bd-main-light">
+						<p>Container 1</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container display-inline-flex">
+					<div class="card soft bd-main-light">
+						<p>Container 2</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container flex-none">
+					<div class="card soft bd-main-light">
+						<p>Container 3</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>Flex None</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card soft">
+				<h2>Display Flex Stretch</h2>
+				<div class="container flex-stretch">
+					<div class="card soft bd-main-light">
+						<p>Container 1</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container flex-stretch">
+					<div class="card soft bd-main-light">
+						<p>Container 2</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container flex-none">
+					<div class="card soft bd-main-light">
+						<p>Container 3</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>Flex None</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card soft">
+				<h2>Display Flex + Justify Center</h2>
+				<div class="container display-flex flex-justify-center">
+					<div class="card soft bd-main-light">
+						<p>Container 1</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container display-flex flex-justify-center">
+					<div class="card soft bd-main-light">
+						<p>Container 2</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container flex-none">
+					<div class="card soft bd-main-light">
+						<p>Container 3</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>Flex None</p>
+					</div>
+				</div>
+			</div>	
+
+			<div class="card soft">
+				<h2>Display Flex + Align Center</h2>
+				<div class="container display-flex flex-align-center">
+					<div class="card soft bd-main-light">
+						<p>Container 1</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container display-flex flex-align-center">
+					<div class="card soft bd-main-light">
+						<p>Container 2</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>This is a paragraph.</p>
+					</div>
+					<div class="card soft bd-main-light">
+					</div>
+				</div>
+				<div class="container flex-none">
+					<div class="card soft bd-main-light">
+						<p>Container 3</p>
+					</div>
+					<div class="card soft bd-main-light">
+						<p>Flex None</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
 
@@ -242,44 +573,42 @@
 		}
 		</script>
 
-
-
 		<div class="container" id="tables">
 			<br>
-			<h1 class="text-style-8">7. Tables</h1>
+			<h1>7. Tables</h1>
 
 			<div class="card soft">
-				<h3>Table - Basic</h3>
+				<h2>Table - Basic</h2>
 				<script>makeTable("table")</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Table - Striped</h3>
+				<h2>Table - Striped</h2>
 				<script>makeTable("table table-striped")</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Table - Lined Vertical</h3>
+				<h2>Table - Lined Vertical</h2>
 				<script>makeTable("table table-lined table-vertical")</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Table - Lined Horizontal</h3>
+				<h2>Table - Lined Horizontal</h2>
 				<script>makeTable("table table-lined table-horizontal")</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Table - Lined Border</h3>
+				<h2>Table - Lined Border</h2>
 				<script>makeTable("table table-lined table-border")</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Table - Lined All</h3>
+				<h2>Table - Lined All</h2>
 				<script>makeTable("table table-lined table-all")</script>
 			</div>
 
 			<div class="card soft">
-				<h3>Table - Lined All Striped</h3>
+				<h2>Table - Lined All Striped</h2>
 				<script>makeTable("table table-lined table-vertical table-horizontal table-border table-striped")</script>
 			</div>
 		</div>
@@ -289,9 +618,9 @@
 		<!-- Figures -->
 		<div class="container" id="figures">
 			<br>
-			<h1 class="text-style-8">8. Figures</h1>
+			<h1>8. Figures</h1>
 			<div class="card soft">
-				<h3 id="basicfigure">Basic Figure</h3>
+				<h2 id="basicfigure">Basic Figure</h2>
 				<figure class="figure">
 					<img src="https://placehold.co/220x360?text=product" alt="Product Image">
 					<figcaption>Image Size with a 11:18 Ratio (Close to Golden Raio)</figcaption>
@@ -299,7 +628,7 @@
 			</div>
 
 			<br>
-			<h3>Figure Grid</h3>
+			<h2>Figure Grid</h2>
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure">
@@ -345,7 +674,7 @@
 			</div>
 
 			<br>
-			<h3>Product Grid</h3>
+			<h2>Product Grid</h2>
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure product">
@@ -410,7 +739,7 @@
 			</div>
 
 			<br>
-			<h3>Product Overlay</h3>
+			<h2>Product Overlay</h2>
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure product-overlay">
@@ -490,9 +819,9 @@
 
 		<div class="container" id="forms">
 			<br>
-			<h1 class="text-style-8">9. Forms</h1>
+			<h1>9. Forms</h1>
 			
-			<h3 id="inputs">Inputs</h3>
+			<h2 id="inputs">Inputs</h2>
 
 			<div class="card soft">
 				<h3>Default Input</h3>
@@ -594,28 +923,28 @@
 			<div class="card soft">
 				<div class="form-control">
 					<form>
-						<input type="search" class="hotdog" placeholder="Search">
+						<input type="search" class="hotdog" placeholder="Search - Hotdog">
 					</form>
 				</div>
 				<div class="form-control">
 					<form>
-						<input type="search" class="hotdog dark" placeholder="Search">
+						<input type="search" class="hotdog dark" placeholder="Search - Hotdog Dark">
 					</form>
 				</div>
 				<div class="form-control">
 					<form class="card dark">
-						<input type="search" class="hotdog light" placeholder="Search">
+						<input type="search" class="hotdog light" placeholder="Search - Hotdog Light">
 					</form>
 				</div>
 				<div class="form-control">
 					<form class="hotdog">
 						<span>&equiv;</span>
-						<input type="search" placeholder="Search">
+						<input type="search" placeholder="&nbsp;Search - Hotdog with Symbol">
 					</form>
 				</div>
 				<div class="form-control">
 					<form class="hotdog">
-						<input type="search" placeholder="Search">
+						<input type="search" placeholder="&nbsp;Search - Hotdog with Symbol">
 						<span>&equiv;</span>
 					</form>
 				</div>
@@ -661,25 +990,41 @@
 
 				<br>
 				<h3>Heart Checkbox</h3>
-				<div class="favorite">
+				<div class="heart">
 					<input type="checkbox"  id="heart-example" class="hidden">
 					<label for="heart-example">&hearts;</label>
 				</div>
 
+				<br>
+				<h3>Star Checkbox</h3>
+				<div class="star">
+					<input type="checkbox"  id="star-example-1" class="hidden">
+					<label for="star-example-1">&starf;</label>
+					<input type="checkbox"  id="star-example-2" class="hidden">
+					<label for="star-example-2">&starf;</label>
+					<input type="checkbox"  id="star-example-3" class="hidden">
+					<label for="star-example-3">&starf;</label>
+					<input type="checkbox"  id="star-example-4" class="hidden">
+					<label for="star-example-4">&starf;</label>
+					<input type="checkbox"  id="star-example-5" class="hidden">
+					<label for="star-example-5">&starf;</label>
+				</div>
+
 				<h3>Toggle</h3>
 				<div class="toggle">
-					<input type="checkbox" id="toggle-1" class="hidden"></input>
-					<label for="toggle-1"></label>
+					<input type="checkbox" id="toggle-example-1" class="hidden"></input>
+					<label for="toggle-example-1"></label>
 				</div>
 
 				<div class="display-flex flex-align-center">
 					<div class="flex-stretch">
-						<label for="toggle-2" class="form-label">Display Warning</label>
+						<label for="toggle-example-2" class="form-label">Display Warning (Form-Label)</label>
 					</div>
+
 					<div class="flex-none">
 						<div class="toggle" style="font-size: 2em">
-							<input type="checkbox" id="toggle-2" class="hidden">
-							<label for="toggle-2"></label>
+							<input type="checkbox" id="toggle-example-2" class="hidden">
+							<label for="toggle-example-2"></label>
 						</div>
 					</div>
 				</div>
