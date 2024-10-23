@@ -1,49 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shuang's HTML Landing</title>
+	<title>Shuang's PHP Landing</title>
 
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
+	<?php include "parts/meta.php" ?>
 </head>
 
+
 <body>
-
 	<header>
-		<div class="navbar">
-			<div class="container display-flex">
-				<div class="flex-none">
-					<h1>reCama</h1>
-				</div>
-				<div class="flex-stretch"></div>
-
-			    <nav class="flex-none nav">
-				    <ul class="container display-flex">
-					    <li><a href="#">Home</a></li>
-					    <li><a href="#">Store</a></li>
-					    <li><a href="#">Account</a></li>
-					    <li><a href="#">Cart</a></li>
-					</ul>
-			    </nav>
-			</div>
-		</div>
-		<div class="container display-flex">
-			<nav class="flexjustify nav">
-			    <ul class="container display-flex">
-				    <li><a href="#article1">Camera</a></li>
-				    <li><a href="#article2">Lens</a></li>
-				    <li><a href="#article4">Filter</a></li>
-				    <li><a href="#article4">Tripod</a></li>
-				    <li><a href="#article7">Lighting</a></li>
-				    <li><a href="#article7">Bags</a></li>
-				    <li><a href="#article7">Accessory</a></li>
-				</ul>
-		    </nav>
-		</div>
-
+		<?php include "parts/navbar.php" ?>
+		<?php include "parts/filter.php" ?>
 	</header>
 
 	<div class="container">
@@ -204,5 +173,6 @@
 	</div>
 
 </body>
+
 
 </html>

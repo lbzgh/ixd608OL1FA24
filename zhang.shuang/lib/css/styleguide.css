@@ -37,11 +37,11 @@ body {
 }
 
 header {
-	position: fixed;
+/*	position: fixed;*/
 	top: 0;
 	padding-top: 0;
 	width: 100%;
-  z-index: 1000;
+/*  z-index: 1000;*/
 }
 
 header. nav {
@@ -87,11 +87,11 @@ a:hover {
 .display-block {display: block;}
 .display-inline-block {display: inline-block;}
 
-.stretch-flex { flex: 1 1 auto; }
+.flex-stretch { flex: 1 1 auto; }
 .flex-none { flex: none; }
 
 .flex-align-center { align-items:center; }
-.felx-justify-center { justify-content:center; }
+.flex-justify-center { justify-content:center; }
 
 
 
@@ -249,8 +249,8 @@ a:hover {
 }
 
 .nav-material a:hover {
-	background-color: var(--color-white);
-	color: inherit;
+	background-color: var(--color-neutral-light);
+	color: var(--color-main-medium);
 }
 
 .nav-material a::after{
@@ -498,7 +498,7 @@ footer{
 /* VIEWWINDOW COMPONENT */
 
 .view-window {
-	height: 80vh;
+	height: 95vh;
 	position: relative;
 	overflow: hidden;
 	background-size: cover;
@@ -578,12 +578,13 @@ footer{
 	-webkit-appeatance: none;
 	/* color: var(--color-white); */
 	width: 100%;
+	height: 2rem;
 	outline: 0;
 }
 
 .form-input {
 	border-bottom: 1px solid var(--color-neutral-dark);
-	padding: 0.5em 1em;
+	padding: 0em 0em;
 }
 
 .form-input:focus {
@@ -598,10 +599,10 @@ footer{
 }
 
 .form-button {
-	background-color: var(--color-main-light);
-	color: var(--color-main-dark);
+	background-color: var(--color-black);
+	color: var(--color-white);
 	padding: 0.5em 1em;
-	border: 1px solid var(--color-main-medium);
+	border: 1px solid var(--color-white);
 	border-radius: 0.3em;
 	cursor: pointer;
 	text-align: center;
@@ -611,12 +612,13 @@ footer{
 	text-decoration: none;
 	background-color: var(--color-white);
 	color: var(--color-main-dark);
-	border: 1px solid var(--color-main-light);
-	transform: scale(1.05)
+	border: 1px solid var(--color-white);
+/*	transform: scale(1.05)*/
 }
 
 .form-button:active {
-	background-color: var(--color-main-light);
+	background-color: var(--color-white);
+
 }
 
 .hotdog {
