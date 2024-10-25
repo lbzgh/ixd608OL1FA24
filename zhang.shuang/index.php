@@ -52,7 +52,7 @@
 					<div class="display-flex flex-align-center">
 						<div>
 							<img class="mediumimg" src="img/camera02small.jpg">
-							<h2>Vintage Cameras</h2>
+							<h2>Film Cameras</h2>
 						</div>
 						<div class="flex-none">
 							<small></small>
@@ -65,7 +65,7 @@
 		<article class="article card soft" id="article3">
 			<div class="display-flex flex-align-center">
 				<div>
-					<h2>Storage</h2>
+					<h2>Lenses</h2>
 				</div>
 			</div>
 			<div class="article-body">
@@ -112,7 +112,7 @@
 		<article class="article card soft" id="article5">
 			<div class="display-flex flex-align-center">
 				<div>
-					<h2>Sliders</h2>
+					<h2>Bags</h2>
 				</div>
 			</div>
 			<div class="article-body">
@@ -135,7 +135,7 @@
 					<div class="display-flex flex-align-center">
 						<div>
 							<img class="mediumimg" src="img/gadget01small.jpg">
-							<h2>Gadgets</h2>
+							<h2>Slings</h2>
 						</div>
 						<div class="flex-none">
 							<small></small>
@@ -147,7 +147,7 @@
 					<div class="display-flex flex-align-center">
 						<div>
 							<img class="mediumimg" src="img/gadget01small.jpg">
-							<h2>Bags</h2>
+							<h2>Straps</h2>
 						</div>
 						<div class="flex-none">
 							<small></small>
@@ -160,7 +160,7 @@
 		<article class="article card soft" id="article7">
 			<div class="display-flex flex-align-center">
 				<div>
-					<h2>Lighting</h2>
+					<h2>Accessories</h2>
 				</div>
 			</div>
 			<div class="article-body">
@@ -174,5 +174,8 @@
 
 </body>
 
+<footer>
+	<?php include "parts/footer.php" ?>
+</footer>
 
 </html>

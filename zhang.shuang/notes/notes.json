@@ -1,0 +1,13 @@
+{
+	"notes": [
+		"JSON files start with an array [], or an object {}",
+		"Notes is the property of this object",
+		"This array is the value of this object",
+		"Property names are in quotation marks",
+		"A comma can only be used between 2 items",
+		"No commas at the end of the last item",
+		"JSON file does not allow comments",
+		"You could write any comments as an array",
+		"Use a linter like jsonlint.com to check codes"
+	]
+}

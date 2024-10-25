@@ -2,7 +2,7 @@
 	<nav class="flex-stretch nav">		
 	    <script>
         	const makeNav = (classes = '') => {
-            const links = ['Camera', 'Lens', 'Tripod', 'Bags', 'Accessory'];
+            const links = ['Cameras', 'Lenses', 'Tripods', 'Bags', 'Accessories'];
             let ran = Math.floor(Math.random() * links.length);
             document.write(`
             <div>
