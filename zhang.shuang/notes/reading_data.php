@@ -21,7 +21,7 @@ $users_array = file_get_json("../data/users.json");
 
 <head>
 	<meta charset="UTF-8">
-	<title>Reading Data</title>
+	<title>SZ Reading Data</title>
 
 	<?php include "../parts/meta.php" ?>
 </head>
