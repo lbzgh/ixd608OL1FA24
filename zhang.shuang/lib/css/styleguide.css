@@ -278,7 +278,7 @@ a:hover {
 .navbar h1 {
 	font-size: 1.6em;
 	margin: 0;
-	font-family: var(--font-sans);
+	font-family: var(--font-serif);
 	font-weight: 300;
 }
 
