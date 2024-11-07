@@ -50,6 +50,16 @@
 					</figure>
 				</div>
 
+			</div>
+		</div>
+
+		<div>
+			<h2>Film Cameras</h2>
+		</div>
+		<div class="card soft">
+			
+			<div class="grid gap">
+				
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure">
 						<img src="https://placehold.co/220x360?text=product" alt="Product Image">
@@ -76,12 +86,11 @@
 						</figcaption>
 					</figure>
 				</div>
-
 			</div>
 		</div>
 
 		<div>
-			<h2>Film Cameras</h2>
+			<h2>Lenses</h2>
 		</div>
 		<div class="card soft">
 			
@@ -114,7 +123,42 @@
 					</figure>
 				</div>
 			</div>
+		</div>
 
+		<div>
+			<h2>Camera Supports</h2>
+		</div>
+		<div class="card soft">
+			
+			<div class="grid gap">
+				
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure">
+						<img src="https://placehold.co/220x360?text=product" alt="Product Image">
+						<figcaption>
+							<a href="product_item.php?id=10">Product 10</a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure">
+						<img src="https://placehold.co/220x360?text=product" alt="Product Image">
+						<figcaption>
+							<a href="product_item.php?id=11">Product 11</a>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="col-xs-12 col-md-4">
+					<figure class="figure">
+						<img src="https://placehold.co/220x360?text=product" alt="Product Image">
+						<figcaption>
+							<a href="product_item.php?id=12">Product 12</a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
 		</div>
 
 	</div>
