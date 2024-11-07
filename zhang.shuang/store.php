@@ -25,7 +25,7 @@
 				
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure">
-						<img src="https://placehold.co/220x360?text=product" alt="Product Image">
+						<img src="img/img_product/Camera_SonyAlpha7IV_01.jpg" alt="Product Image">
 						<figcaption>
 							<a href="product_item.php?id=1">Product 1</a>
 						</figcaption>
@@ -34,7 +34,7 @@
 
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure">
-						<img src="https://placehold.co/220x360?text=product" alt="Product Image">
+						<img src="img/img_product/Camera_CanonEOSR10_01.jpg" alt="Product Image">
 						<figcaption>
 							<a href="product_item.php?id=2">Product 2</a>
 						</figcaption>
@@ -43,7 +43,7 @@
 
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure">
-						<img src="https://placehold.co/220x360?text=product" alt="Product Image">
+						<img src="img/img_product/Camera_SonyA7RV_01.jpg" alt="Product Image">
 						<figcaption>
 							<a href="product_item.php?id=3">Product 3</a>
 						</figcaption>
