@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Shuang's PHP Landing</title>
+	<title>SZ PHP Landing</title>
 
 	<?php include "parts/meta.php" ?>
 </head>
@@ -12,7 +12,7 @@
 <body>
 	<header>
 		<?php include "parts/navbar.php" ?>
-		<?php include "parts/filter.php" ?>
+		<!-- <?php include "parts/filter.php" ?> -->
 	</header>
 
 	<div class="container">

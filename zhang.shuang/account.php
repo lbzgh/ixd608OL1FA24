@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Shuang's Account</title>
+	<title>SZ Account</title>
 
 	<?php include "parts/meta.php" ?>
 </head>

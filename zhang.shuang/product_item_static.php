@@ -17,9 +17,8 @@
 	
 	<div class="container">
 		<div class="card soft">
-			<h2>Product Page</h2>
+			<h2>Product Item Page</h2>
 			<p>This is item No. <?= $_GET['id'] ?></p>
-			<p><a href="product_added_to_cart.php">Add to Cart</a></p>
 
 			<figure class="figure">
 					<img src="https://placehold.co/220x360?text=product" alt="Product Image">

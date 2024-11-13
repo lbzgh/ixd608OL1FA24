@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Shuang's Cart</title>
+	<title>SZ Cart</title>
 
 	<?php include "parts/meta.php" ?>
 </head>
@@ -12,7 +12,7 @@
 <body>
 	<header>
 		<?php include "parts/navbar.php" ?>
-		<?php include "parts/filter.php" ?>
+		<!-- <?php include "parts/filter.php" ?> -->
 	</header>
 
 	<div class="container card soft">
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="article-body">
-				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
+				<p>List of produts in your shopping cart:</p>
 			</div>
 		</article>
 
@@ -52,6 +52,12 @@
 		</script>
 
 		<script>makeTable("table table-striped")</script>
+		
+		<br>
+		<div class="display-flex">
+			<div class="flex-stretch"><p>Total Price: USD $###.##</p></div>
+			<div class="flex-stretch"><a href="checkout.php" class="form-button">Checkout</a></div>
+		</div>
 	</div>
 
 </body>

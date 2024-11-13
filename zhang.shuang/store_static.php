@@ -159,19 +159,9 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="card soft">
-			<?php
-			
-			include "lib/php/functions.php";
 
-			$result = makeQuery(makeConn(),"SELECT * FROM `products`");
-
-			print_p($result);
-
-			?>
-		</div>
 	</div>
+
 </body>
 
 
