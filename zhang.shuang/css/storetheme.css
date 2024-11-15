@@ -64,11 +64,27 @@ body {
 
 
 
-
 .figure.product{
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
+	height: 100%;
+	transition: all 0.25s;
+}
+
+.product.figure img{
+	height: 100%;
+	object-fit: contain;
+}
+
+.productlist a{
+	text-decoration: none;
+	font-weight: initial;
+}
+
+.product.figure:hover {
+	box-shadow: 0 2px 15px var(--color-main-dark);
+/*	border: 0.5px solid var(--color-main-light);*/
 }
 
 .product-overlay {
@@ -132,3 +148,15 @@ body {
 	}
 }
 
+.img-main img {
+	width: 100%;
+	height: 65vh;
+	object-fit: contain;
+}
+.img-more img {
+	width:33.33%;
+	height: 10vh;
+/*	width: 5em; */
+/*	height: 8em;*/
+	object-fit: contain;
+}

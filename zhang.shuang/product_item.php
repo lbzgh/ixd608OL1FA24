@@ -1,3 +1,20 @@
+<?php
+
+include_once "lib/php/functions.php";
+// include_once "parts/templates.php";
+
+$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+
+$images = explode(",", $product->images);
+
+$image_elements = array_reduce($images,function($r,$o){
+	return $r."<img src='img/img_product/$o'>";
+});
+
+// print_p($product);
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -6,6 +23,7 @@
 	<title>SZ Product Page</title>
 
 	<?php include "parts/meta.php" ?>
+	<script type="text/javascript" src="js/product_images.js"></script>
 </head>
 
 
@@ -15,18 +33,66 @@
 		<!-- <?php include "parts/filter.php" ?> -->
 	</header>
 	
+
 	<div class="container">
-		<div class="card soft">
-			<h2>Product Page</h2>
-			<p>This is item No. <?= $_GET['id'] ?></p>
-			<p><a href="product_added_to_cart.php">Add to Cart</a></p>
+		<h2>Product Details</h2>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-1">
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="card soft">
+					<div class="img-main">
+						<img src="img/img_product/<?= $product->image_main ?>" alt="Product Image">
+					</div>
+					<div class="img-more">
+						<?= $image_elements ?>
+					</div>
+				</div>			
+			</div>
 
-			<figure class="figure">
-					<img src="https://placehold.co/220x360?text=product" alt="Product Image">
-					<figcaption>Image Size with a 11:18 Ratio (Close to Golden Raio)</figcaption>
-				</figure>
+			<div class="col-xs-12 col-md-4">
+				<div class="card soft flat">
+					<div class="card-section">
+						<h2 class="product-name"><?= $product->name ?></h2>
+						<div class="product-price">
+							<p>&dollar;<?= $product->price ?></p>
+							<small class="text-color-5">Stock ID: <?= $_GET['id'] ?></small>
+						</div>
+					</div>
+					<div class="card-section">
+						<label for="product-amount" class="form-label">Amount:</label>
+						<div class="form-select" id="product-amount">
+							<select>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+					</div>
+					<div>
+						<p><a href="product_added_to_cart.php?id=<?= $product->id ?>" class="form-button">Add to Cart</a></p>
+					</div>
+					<div class="card-section">
+						
+						<p><?= $product->description ?></p>
+					</div>
+
+				</div>			
+			</div>		
 		</div>
+	</div>
 
+	<br>
+	<!-- Divider -->
+	<hr>
+	<div class="container">
 		<h2>You may also like</h2>
 		<div class="card soft">
 			<div class="grid gap">
@@ -34,8 +100,8 @@
 					<figure class="figure">
 						<img src="https://placehold.co/360x220?text=product" alt="Product Image">
 						<figcaption>
-								<a href="product_item.php?id=1">Product 1</a>
-							</figcaption>
+							<a href="product_item.php?id=1">Product 1</a>
+						</figcaption>
 					</figure>
 				</div>
 
@@ -43,8 +109,8 @@
 					<figure class="figure">
 						<img src="https://placehold.co/360x220?text=product" alt="Product Image">
 						<figcaption>
-								<a href="product_item.php?id=2">Product 2</a>
-							</figcaption>
+							<a href="product_item.php?id=2">Product 2</a>
+						</figcaption>
 					</figure>
 				</div>
 
@@ -52,13 +118,12 @@
 					<figure class="figure">
 						<img src="https://placehold.co/360x220?text=product" alt="Product Image">
 						<figcaption>
-								<a href="product_item.php?id=3">Product 3</a>
-							</figcaption>
+							<a href="product_item.php?id=3">Product 3</a>
+						</figcaption>
 					</figure>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 </body>

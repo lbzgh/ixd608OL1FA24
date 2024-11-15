@@ -1,3 +1,14 @@
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (1,5,10)");
+
+// print_p($product);
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -15,18 +26,61 @@
 		<!-- <?php include "parts/filter.php" ?> -->
 	</header>
 
-	<div class="container card soft">
-		
-		<article class="article" id="article1">
+	<div class="container">
+		<h2>Your Shopping Cart</h2>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-1">
+				
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="card soft">
+					<?= array_reduce($cart,'cartListTemplate' ) ?> <!-- function($r,$o){return $r."<div>$o->name</div>";} -->
+
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card soft flat">
+					<div class="card-section display-flex">
+						<div class="flex-stretch">
+							<strong>Sub Total:</strong>
+						</div>
+						<div class="flex-none">
+							&dollar;12345.67
+						</div>
+					</div>
+					<div class="card-section display-flex">
+						<div class="flex-stretch">
+							<strong>Taxes:</strong>
+						</div>
+						<div class="flex-none">
+							&dollar;1234.56
+						</div>
+					</div>
+					<div class="card-section display-flex">
+
+						<div class="flex-stretch">
+							<strong>Total:</strong>
+						</div>
+						<div class="flex-none">
+							&dollar;13580.24
+						</div>
+					</div>
+					<div class="card-section">
+						<a href="checkout.php" class="form-button">Checkout</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- 		<hr>
 			<div class="display-flex flex-align-center">
 				<div>
-					<h2>Your Shopping Cart</h2>
+					
 				</div>
 			</div>
 			<div class="article-body">
 				<p>List of produts in your shopping cart:</p>
 			</div>
-		</article>
 
 		<script>
 		const makeTable = (classes='') => {
@@ -57,7 +111,7 @@
 		<div class="display-flex">
 			<div class="flex-stretch"><p>Total Price: USD $###.##</p></div>
 			<div class="flex-stretch"><a href="checkout.php" class="form-button">Checkout</a></div>
-		</div>
+		</div> -->
 	</div>
 
 </body>

@@ -15,18 +15,16 @@
 		<!-- <?php include "parts/filter.php" ?> -->
 	</header>
 
-	<div class="container card soft">
-		
-		<article class="article" id="article1">
+	<div class="container">
+		<h2>Payment Submitted</h2>
+		<div class="card soft">
 			<div class="display-flex flex-align-center">
 				<div>
-					<h2>Payment Submitted</h2>
-					<p>Thank you four your purchase!</p>
+					<h3>Thank you four your purchase!</p>
 				</div>
 			</div>
-		</article>
-
-		<p><a href="store.php">Continue Shopping</a></p>
+			<p><a href="store.php" class="form-button">Continue Shopping</a></p>
+		</div>
 	</div>
 
 </body>

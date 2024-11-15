@@ -1,3 +1,14 @@
+<?php
+
+include_once "lib/php/functions.php";
+// include_once "parts/templates.php";
+
+$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+
+// print_p($product);
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +28,7 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h2>You Added ___ to Your Cart</h2>
+			<h2>"<?= $product->name ?>" was added to your cart</h2>
 			<div class="display-flex">
 				<div class="flex-none"><a href="store.php">Continue Shopping</a></div>
 				<div class="flex-stretch"></div>
