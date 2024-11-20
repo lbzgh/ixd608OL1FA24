@@ -1,6 +1,11 @@
+<?php
+
+	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
+// print_p($_SESSION)
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<title>SZ Store</title>
@@ -18,9 +23,6 @@
 		
 			<h2>Our Products</h2>
 			<?php
-			
-			include_once "lib/php/functions.php";
-			include_once "parts/templates.php";
 
 			$result = makeQuery(
 				makeConn(),

@@ -2,26 +2,11 @@
 
 include_once "lib/php/functions.php";
 
-
-function getCart() {
-	return isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
-}
-function addToCart($p) {
-	// $_SESSION['cart'][];
-	$cart = getCart();
-
-	$_SESSION['cart'][] = (object)[
-		"id"=>$id,
-		"amount"=>$amount
-		];
-}
-	// $_SESSION['cart'][] = $p['product-id'];
-
 switch($_GET['action']) {
 	case "add-to-cart":
 		$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_POST['product-id'])[0];
 		addToCart($_POST['product-id'],$_POST['product-amount']);
-		// header("location:{$_SERVER['PHP_SELF']}?id=$id");
+		header("location:product_added_to_cart.php?id={$_POST['product-id']}");
 		break;
 	case "update-cart-item":
 		// header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
@@ -29,6 +14,9 @@ switch($_GET['action']) {
 	case "delete-cart-item":
 		// header("location:{$_SERVER['PHP_SELF']}");
 		break;
+	case "reset-cart":
+		resetCart();
+		break;	
 	default:
 		die("Incorrect Action");
 }
