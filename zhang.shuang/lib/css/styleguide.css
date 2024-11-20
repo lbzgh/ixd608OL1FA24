@@ -618,6 +618,10 @@ footer{
 	text-align: center;
 }
 
+.form-button.inline {
+	width: initial;
+}
+
 .form-button:hover {
 	text-decoration: none;
 	background-color: var(--color-white);

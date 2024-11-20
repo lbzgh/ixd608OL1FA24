@@ -67,16 +67,16 @@ $image_elements = array_reduce($images,function($r,$o){
 						<div class="form-select">
 							<!-- id is for front-end; name is for back-end. -->
 							<select id="product-amount" name="product-amount"> 
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
 							</select>
 						</div>
 					</div>
@@ -84,8 +84,7 @@ $image_elements = array_reduce($images,function($r,$o){
 						<input type="submit" class="form-button" value="Add to Cart">
 					</div>
 					<div class="card-section">
-						
-						<p><?= $product->description ?></p>
+					<p><?= $product->description ?></p>
 					</div>
 				</form>			
 			</div>		
