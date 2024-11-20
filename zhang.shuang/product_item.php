@@ -12,7 +12,7 @@ $image_elements = array_reduce($images,function($r,$o){
 });
 // print_p($_SESSION);
 // print_p($product);
-
+// print_p is defined in functions.php
 ?>
 
 <!DOCTYPE html>

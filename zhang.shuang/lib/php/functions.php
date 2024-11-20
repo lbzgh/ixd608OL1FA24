@@ -16,7 +16,6 @@ function file_get_json($filename) {
 
 
 
-
 include_once "auth.php";
 function makeConn() {
 	$conn = new mysqli(...MYSQLIAuth());
@@ -53,7 +52,6 @@ function getCart() {
 function addToCart($id,$amount) {
 	// $_SESSION['cart'][];
 	$cart = getCart();
-
 	$p = array_find($cart,function($o) use($id) { return $o->id==$id; });
 
 	if($p){

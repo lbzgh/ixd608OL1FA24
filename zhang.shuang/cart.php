@@ -19,7 +19,6 @@ $cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (1,5,10)");
 	<?php include "parts/meta.php" ?>
 </head>
 
-
 <body>
 	<header>
 		<?php include "parts/navbar.php" ?>

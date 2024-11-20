@@ -8,7 +8,6 @@ $cart_product = cartItemById($_GET['id']);
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<title>SZ Added to Cart</title>
