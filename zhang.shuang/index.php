@@ -25,13 +25,14 @@ include_once "lib/php/functions.php";
 		<article class="article card soft" id="article1">
 			<div class="display-flex flex-align-center">
 				<div>
-					<h2>Your Camera Gears Mall</h2>
+					<h1>Online Camera Mall</h1>
 				</div>
 				<div class="flex-none">
 					<small></small>
 				</div>
 			</div>
 			<div class="article-body">
+				<p>Welcome to reCama, your one-stop online shopping mall of camera gears.</p>
 				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
 			</div>
 		</article>
@@ -40,11 +41,38 @@ include_once "lib/php/functions.php";
 	<div class="container">
 
 		<article class="article card soft column" id="article2">
-			<div class="row">
+			<h2>Cameras</h2>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-6">
+					<figure class="figure product-overlay">
+						<img src="img/camera01.jpg" alt="Image of Digital Camera">
+						<figcaption> 
+							<div class="caption-body">
+								<div>Digital Cameras</div>
+							</div>
+						</figcaption>
+					</figure>
+					<p>Digital Cameras - Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat!</p>
+				</div>
+
+				<div class="col-xs-12 col-md-6">
+					<figure class="figure product-overlay">
+						<img src="img/camera02.jpg" alt="Image of Vintage Camera">
+						<figcaption> 
+							<div class="caption-body">
+								<div>Film Cameras</div>
+							</div>
+						</figcaption>
+					</figure>
+					<p>Film Cameras - Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat!</p>
+				</div>
+			</div>
+
+			<!-- <div class="row">
 				<div class="column">
 					<div class="display-flex flex-align-center">
 						<div>
-							<img class="mediumimg" src="img/camera01small.jpg">
+							<img class="mediumimg" src="img/camera01.jpg">
 							<h2>Digital Cameras</h2>
 						</div>
 						<div class="flex-none">
@@ -56,7 +84,7 @@ include_once "lib/php/functions.php";
 				<div class="column">
 					<div class="display-flex flex-align-center">
 						<div>
-							<img class="mediumimg" src="img/camera02small.jpg">
+							<img class="mediumimg" src="img/camera02.jpg">
 							<h2>Film Cameras</h2>
 						</div>
 						<div class="flex-none">
@@ -64,19 +92,26 @@ include_once "lib/php/functions.php";
 						</div>
 					</div>
 				</div>
+			</div> -->
 		</article>
 
 
 		<article class="article card soft" id="article3">
-			<div class="display-flex flex-align-center">
-				<div>
-					<h2>Lenses</h2>
+			<h2>Lenses</h2>
+			<div class="grid gap">
+				<div class="col-xs-12">
+					<figure class="figure product-overlay">
+						<img src="img/lens01.jpg" alt="Image of Lenses">
+						<figcaption> 
+							<div class="caption-body">
+								<div>Lenses</div>
+							</div>
+						</figcaption>
+					</figure>
+					<p>Lenses - Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat!</p>
+					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
+					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
 				</div>
-			</div>
-			<div class="article-body">
-				<p>Memory Cards. Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
-				<p>Films. Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
-				<p>Hard drives. Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
 			</div>
 		</article>
 	</div>
