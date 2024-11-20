@@ -24,7 +24,7 @@ $cart_items = getCartItems();
 <body>
 	<header>
 		<?php include "parts/navbar.php" ?>
-		<!-- <?php include "parts/filter.php" ?> -->
+		
 	</header>
 
 	<div class="container">
