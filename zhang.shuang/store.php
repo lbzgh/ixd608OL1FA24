@@ -38,16 +38,16 @@
 		<div class="from-control display-flex">
 			<div class="flex-stretch display-flex">
 				<div class="flex-none">
-					<button data-filter="ctegory_1" data-value+"" type="button" class="form-button">All</button>
+					<button data-filter="category_1" data-value="" type="button" class="form-button">All</button>
 				</div>
 				<div class="flex-none">
-					<button data-filter="ctegory_1" data-value+"camera" type="button" class="form-button">Camera</button>
+					<button data-filter="category_1" data-value="camera" type="button" class="form-button">Camera</button>
 				</div>
 				<div class="flex-none">
-					<button data-filter="ctegory_1" data-value+"lens" type="button" class="form-button">Lens</button>
+					<button data-filter="category_1" data-value="lens" type="button" class="form-button">Lens</button>
 				</div>
 				<div class="flex-none">
-					<button data-filter="ctegory_1" data-value+"camera support" type="button" class="form-button">Camera Support</button>
+					<button data-filter="category_1" data-value="camera support" type="button" class="form-button">Camera Support</button>
 				</div>
 			</div>
 		</div>
