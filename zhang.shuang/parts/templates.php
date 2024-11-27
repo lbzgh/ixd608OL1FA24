@@ -62,7 +62,7 @@ HTML;
 function cartTotals() {
 	$cart = getCartItems();
 
-	$cartprice = array_reduce($cart,function($r,$o){return $r = $o->total;},0);
+	$cartprice = array_reduce($cart,function($r,$o){return $r + $o->total;},0);
 
 	$pricefixed = number_format($cartprice,2,'.','');
 	$taxfixed = number_format($cartprice*0.0725,2,'.','');
