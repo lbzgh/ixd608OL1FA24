@@ -20,7 +20,7 @@ switch ($data->type) {
 			WHERE `name` LIKE '%$data->search%' OR
 			`category_1` LIKE '%$data->search%' OR
 			`category_2` LIKE '%$data->search%' OR
-			-- `description` LIKE '%$data->search%' OR
+			`brand` LIKE '%$data->search%' OR
 			`color` LIKE '%$data->search%'
 			ORDER BY `date_create` DESC 
 			LIMIT 12");

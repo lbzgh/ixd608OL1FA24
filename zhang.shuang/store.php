@@ -29,44 +29,46 @@
 		
 		<h2>Our Products</h2>
 
-		<div class="from-control">
+		<div class="form-control">
 			<form class="hotdog light" id="product-search">
 				<input type="search" placeholder="Search Products">
 			</form>
 		</div>
 
-		<div class="from-control display-flex">
-			<div class="flex-stretch display-flex">
+		<div class="form-control display-flex">
+			<div class="flex-stretch display-flex grid gap">
 				<div class="flex-none">
-					<button data-filter="category_1" data-value="" type="button" class="form-button">All</button>
+					<button data-filter="category_1" data-value="" type="button" class="form-button"><small>All</small></button>
 				</div>
 				<div class="flex-none">
-					<button data-filter="category_1" data-value="camera" type="button" class="form-button">Camera</button>
+					<button data-filter="category_1" data-value="camera" type="button" class="form-button"><small>Camera</small></button>
 				</div>
 				<div class="flex-none">
-					<button data-filter="category_1" data-value="lens" type="button" class="form-button">Lens</button>
+					<button data-filter="category_1" data-value="lens" type="button" class="form-button"><small>Lens</small></button>
 				</div>
 				<div class="flex-none">
-					<button data-filter="category_1" data-value="camera support" type="button" class="form-button">Camera Support</button>
+					<button data-filter="category_1" data-value="camera support" type="button" class="form-button"><small>Support</small></button>
+				</div>
+
+				<div class="flex-none">
+					<div class="form-select">
+						<select class="js-sort">
+							<option value="1">Latest</option>
+							<option value="2">Earliest</option>
+							<option value="3">Highest Price</option>
+							<option value="4">Lowest Price</option>
+							<option value="5">By Category</option>
+						</select>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="flex-none">
-			<div class="form-select " style="border: 1px solid var(--color-black)">
-				<select class="js-sort">
-					<option value="1">Newest</option>
-					<option value="2">Oldest</option>
-					<option value="3">Highest Price</option>
-					<option value="4">Lowest Price</option>
-				</select>
-			</div>
-		</div>
-
+		<br>
 		<div class="productlist grid gap">
 		</div>
 	</div>
 
 	<?php include "parts/footer.php"; ?>
+
 </body>
 </html>

@@ -92,8 +92,13 @@ a:hover {
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
+.flex-justify-end { justify-content:flex-end; }
 
 .flex-column { flex-direction:column; }
+
+.margin-left-auto {
+	margin-left: auto;
+}
 
 /* SMALL CLASSES */
 
@@ -292,7 +297,7 @@ a:hover {
 	padding: 0 2em;
 }
 
-footer{
+.footer{
 	background-color: var(--color-black);
 	color: var(--color-white);
 
@@ -609,13 +614,15 @@ footer{
 }
 
 .form-button {
-	background-color: var(--color-neutral-dark);
-	color: var(--color-white);
-	padding: 0.5em 1em;
+	background-color: var(--color-neutral-medium);
+	color: var(--color-neutral-dark);
 	border: 1px solid var(--color-white);
-	border-radius: 0.5em;
+	padding: 0.1em 0.6em;
+	height: 1.5em;
+	border-radius: 1em;
 	cursor: pointer;
 	text-align: center;
+	
 }
 
 .form-button.inline {
@@ -626,7 +633,7 @@ footer{
 	text-decoration: none;
 	background-color: var(--color-white);
 	color: var(--color-main-medium);
-	border: 1px solid var(--color-white);
+	border: 0.5px solid var(--color-neutral-medium);
 /*	transform: scale(1.05)*/
 }
 
@@ -637,11 +644,13 @@ footer{
 
 .hotdog {
 	background-color: var(--color-neutral-light);
-	color: var(--color-black);
+	color: var(--color-white);
 	border-radius: 2em;
 	border: 1px solid var(--color-neutral-medium);
-	padding: 0.5em 1.5em;
+	padding: 0.5em 1em;
+	height: 1.8em;
 	display: flex;
+	align-items: center;
 }
 
 .hotdog input {
@@ -650,7 +659,15 @@ footer{
 
 .hotdog.dark {
 	background-color: var(--color-neutral-dark);
-	color: var(--color-neutral-light);
+	color: var(--color-white);
+}
+
+.hotdog.dark input {
+    color: var(--color-white);
+}
+
+.hotdog.dark input::placeholder {
+    color: var(--color-neutral-medium);
 }
 
 .hotdog.light {
@@ -658,17 +675,26 @@ footer{
 	color: var(--color-black);
 }
 
+.hotdog.light input {
+    color: var(--color-neutral-dark);
+}
 
-
-.form-select>select {
-	padding: 0.5em 1em;
-	background-color: var(--color-white);
-	border-radius: 0.3em;
-	cursor: pointer;
+.hotdog.light input::placeholder {
+    color: var(--color-neutral-medium);
 }
 
 .form-select {
+	border: 1px solid var(--color-neutral-medium);
+	border-radius: 0.2em;
 	position: relative;
+}
+
+.form-select>select {
+	padding: 0.3em 1em;
+	background-color: var(--color-neutral-light);
+	color: var(--color-neutral-dark);
+	border-radius: 0.5em;
+	cursor: pointer;
 }
 
 

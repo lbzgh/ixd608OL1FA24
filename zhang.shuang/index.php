@@ -21,7 +21,6 @@ include_once "lib/php/functions.php";
 	</header>
 
 	<div class="container">
-		
 		<article class="article card soft" id="article1">
 			<div class="display-flex flex-align-center">
 				<div>
@@ -40,10 +39,10 @@ include_once "lib/php/functions.php";
 
 	<div class="container">
 
-		<article class="article card soft column" id="article2">
+		<article class="article card soft" id="article2">
 			<h2>Cameras</h2>
 			<div class="grid gap">
-				<div class="col-xs-12 col-md-6">
+				<div class="col-xs-6">
 					<figure class="figure product-overlay">
 						<img src="img/camera01.jpg" alt="Image of Digital Camera">
 						<figcaption> 
@@ -55,7 +54,7 @@ include_once "lib/php/functions.php";
 					<p>Digital Cameras - Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat!</p>
 				</div>
 
-				<div class="col-xs-12 col-md-6">
+				<div class="col-xs-6">
 					<figure class="figure product-overlay">
 						<img src="img/camera02.jpg" alt="Image of Vintage Camera">
 						<figcaption> 
@@ -67,32 +66,6 @@ include_once "lib/php/functions.php";
 					<p>Film Cameras - Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat!</p>
 				</div>
 			</div>
-
-			<!-- <div class="row">
-				<div class="column">
-					<div class="display-flex flex-align-center">
-						<div>
-							<img class="mediumimg" src="img/camera01.jpg">
-							<h2>Digital Cameras</h2>
-						</div>
-						<div class="flex-none">
-							<small></small>
-						</div>
-					</div>
-				</div>
-
-				<div class="column">
-					<div class="display-flex flex-align-center">
-						<div>
-							<img class="mediumimg" src="img/camera02.jpg">
-							<h2>Film Cameras</h2>
-						</div>
-						<div class="flex-none">
-							<small></small>
-						</div>
-					</div>
-				</div>
-			</div> -->
 		</article>
 
 
@@ -121,31 +94,33 @@ include_once "lib/php/functions.php";
 
 	<div class="container">
 
-		<article class="article card soft column" id="article4">
-			<div class="row">
-				<div class="column">
-					<div class="display-flex flex-align-center">
-						<div>
-							<img class="mediumimg" src="img/tripod01small.jpg">
-							<h2>Tripods</h2>
-						</div>
-						<div class="flex-none">
-							<small></small>
-						</div>
-					</div>
+		<article class="article card soft" id="article4">
+			<h2>Camera Support</h2>
+			<div class="grid gap">
+				<div class="col-xs-6">
+					<figure class="figure product-overlay">
+						<img src="img/tripod01.jpg" alt="Image of Tripod">
+						<figcaption> 
+							<div class="caption-body">
+								<div>Tripods</div>
+							</div>
+						</figcaption>
+					</figure>
+					<p>Tripods - Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat!</p>
 				</div>
 
-				<div class="column">
-					<div class="display-flex flex-align-center">
-						<div>
-							<img class="mediumimg" src="img/monopod01small.jpg">
-							<h2> Monopods</h2>
-						</div>
-						<div class="flex-none">
-							<small></small>
-						</div>
-					</div>
+				<div class="col-xs-6">
+					<figure class="figure product-overlay">
+						<img src="img/monopod01.jpg" alt="Image of Monopod">
+						<figcaption> 
+							<div class="caption-body">
+								<div>Monopods</div>
+							</div>
+						</figcaption>
+					</figure>
+					<p>Monopods - Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat!</p>
 				</div>
+			</div>
 		</article>
 
 

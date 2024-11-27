@@ -98,7 +98,7 @@ $image_elements = array_reduce($images,function($r,$o){
 		<h2>You may also like</h2>
 		<div class="card soft">
 			<div class="grid gap">
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<figure class="figure">
 						<img src="https://placehold.co/360x220?text=product" alt="Product Image">
 						<figcaption>
@@ -107,7 +107,7 @@ $image_elements = array_reduce($images,function($r,$o){
 					</figure>
 				</div>
 
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<figure class="figure">
 						<img src="https://placehold.co/360x220?text=product" alt="Product Image">
 						<figcaption>
@@ -116,7 +116,7 @@ $image_elements = array_reduce($images,function($r,$o){
 					</figure>
 				</div>
 
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<figure class="figure">
 						<img src="https://placehold.co/360x220?text=product" alt="Product Image">
 						<figcaption>

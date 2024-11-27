@@ -28,6 +28,7 @@ $(()=>{
 			this.value==2 ? query({type:'product_sort',column:'date_create',dir:'ASC'}) :
 			this.value==3 ? query({type:'product_sort',column:'price',dir:'DESC'}) :
 			this.value==4 ? query({type:'product_sort',column:'price',dir:'ASC'}) :
+			this.value==5 ? query({type:'product_sort',column:'category_0',dir:'ASC'}) :
 			query({type:'products_all'})
 		).then(showResults);
 	})
