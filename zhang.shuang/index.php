@@ -1,6 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 ?>
 <!DOCTYPE html>
@@ -38,7 +39,6 @@ include_once "lib/php/functions.php";
 	</div>
 
 	<div class="container">
-
 		<article class="article card soft" id="article2">
 			<h2>Cameras</h2>
 			<div class="grid gap">
@@ -186,6 +186,22 @@ include_once "lib/php/functions.php";
 			</div>
 		</article>
 	</div>
+
+	<div class="container">
+		<h2>New Products</h2>
+		<?php 
+		recommendedCategory("Camera");
+		 ?>
+	</div>
+
+	<div class="container">
+		<h2>New Lenses</h2>
+		<?php 
+		recommendedCategory("Lens");
+		 ?>
+	</div>
+
+</div>
 
 </body>
 

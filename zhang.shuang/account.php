@@ -33,7 +33,10 @@ include_once "lib/php/functions.php";
 				<button type="button" class="form-button">Forgot Password</button>
 			</div>
 		</div>
+		<?php include "parts/footer.php"; ?>	
 	</div>
+
+
 </body>
 
 

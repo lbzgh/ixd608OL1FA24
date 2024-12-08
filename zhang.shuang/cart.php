@@ -24,7 +24,6 @@ $cart_items = getCartItems();
 <body>
 	<header>
 		<?php include "parts/navbar.php" ?>
-		
 	</header>
 
 	<div class="container">
@@ -47,6 +46,8 @@ $cart_items = getCartItems();
 		</div>
 
 	</div>
+
+	<?php include "parts/footer.php"; ?>	
 
 </body>
 

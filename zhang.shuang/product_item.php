@@ -1,7 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
-// include_once "parts/templates.php";
+include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
@@ -37,9 +37,7 @@ $image_elements = array_reduce($images,function($r,$o){
 	<div class="container">
 		<h2>Product Details</h2>
 		<div class="grid gap">
-			<div class="col-xs-12 col-md-1">
-			</div>
-			<div class="col-xs-12 col-md-6">
+			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="img-main">
 						<img src="img/img_product/<?= $product->image_main ?>" alt="Product Image">
@@ -50,7 +48,7 @@ $image_elements = array_reduce($images,function($r,$o){
 				</div>			
 			</div>
 
-			<div class="col-xs-12 col-md-4">
+			<div class="col-xs-12 col-md-5">
 				<form class="card soft flat" method="post" action="cart_actions.php?action=add-to-cart">
 					
 					<input type="hidden" name="product-id" value="<?= $product->id ?>">
@@ -58,7 +56,9 @@ $image_elements = array_reduce($images,function($r,$o){
 					<div class="card-section">
 						<h2 class="product-name"><?= $product->name ?></h2>
 						<div class="product-price">
-							<p>&dollar;<?= $product->price ?></p>
+							<p><?= $product->deal ?></p>
+							<p>&dollar;<?= $product->price ?> -> Now &dollar;<?= $product->price_now ?> (<?= $product->discount ?>)</p>
+
 							<small class="text-color-5">Stock ID: <?= $_GET['id'] ?></small>
 						</div>
 					</div>
@@ -83,50 +83,21 @@ $image_elements = array_reduce($images,function($r,$o){
 					<div>
 						<input type="submit" class="form-button" value="Add to Cart">
 					</div>
-					<div class="card-section">
-					<p><?= $product->description ?></p>
-					</div>
 				</form>			
 			</div>		
 		</div>
-	</div>
 
-	<br>
-	<!-- Divider -->
-	<hr>
-	<div class="container">
-		<h2>You may also like</h2>
-		<div class="card soft">
-			<div class="grid gap">
-				<div class="col-xs-4 col-md-4">
-					<figure class="figure">
-						<img src="https://placehold.co/360x220?text=product" alt="Product Image">
-						<figcaption>
-							<a href="product_item.php?id=1">Product 1</a>
-						</figcaption>
-					</figure>
-				</div>
-
-				<div class="col-xs-4 col-md-4">
-					<figure class="figure">
-						<img src="https://placehold.co/360x220?text=product" alt="Product Image">
-						<figcaption>
-							<a href="product_item.php?id=2">Product 2</a>
-						</figcaption>
-					</figure>
-				</div>
-
-				<div class="col-xs-4 col-md-4">
-					<figure class="figure">
-						<img src="https://placehold.co/360x220?text=product" alt="Product Image">
-						<figcaption>
-							<a href="product_item.php?id=3">Product 3</a>
-						</figcaption>
-					</figure>
-				</div>
-			</div>
+		<div class="card soft dark">
+			<p> <?= $product->description ?> </p>
 		</div>
+		<h2>You may also like:</h2>
+		<?php 
+		recommendedSimilar($product->category_1,$product->id);
+		?>
+		
 	</div>
+
+	
 
 </body>
 

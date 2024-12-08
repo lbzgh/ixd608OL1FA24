@@ -21,7 +21,7 @@ switch ($data->type) {
 			`category_1` LIKE '%$data->search%' OR
 			`category_2` LIKE '%$data->search%' OR
 			`brand` LIKE '%$data->search%' OR
-			`color` LIKE '%$data->search%'
+			`deal` LIKE '%$data->search%'
 			ORDER BY `date_create` DESC 
 			LIMIT 12");
 		break;

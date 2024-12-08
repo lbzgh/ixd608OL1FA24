@@ -24,6 +24,15 @@ function makeConn() {
 	return $conn;
 }
 
+function makePDOConn() {
+
+	try {
+		$conn = new PDO(...PDOAuth());
+	} catch(PDOException $e){
+		die($e->getMessage());
+	}
+	return $conn;
+}
 
 
 function makeQuery($conn,$qry) {
@@ -93,7 +102,7 @@ function getCartItems(){
 	return array_map(function($o) use ($cart){
 		$p = cartItemById($o->id);
 		$o->amount = $p->amount;
-		$o->total = $p->amount * $o->price;
+		$o->total = $p->amount * $o->price_now;
 		return $o;
 	},$data);
 }

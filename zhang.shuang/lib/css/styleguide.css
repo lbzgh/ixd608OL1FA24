@@ -183,6 +183,10 @@ a:hover {
 	letter-spacing: -0.6px;
 }
 
+.text-deco-none {
+	text-decoration: none;
+}
+
 /* COMPONENT CLASSES */
 .nav ul {
 	list-style-type: none;
@@ -207,6 +211,10 @@ a:hover {
 .nav .active a {
 	background-color: var(--color-neutral-light);
 	color: var(--color-main-medium);
+}
+
+.navbar h1 a:hover {
+    text-decoration: none;
 }
 
 .nav-material ul,
@@ -580,6 +588,10 @@ a:hover {
 	margin: 1em 0;
 }
 
+.form-control.display-flex {
+    align-items: center; /* Vertically center align items */
+    gap: 0.5em;
+
 .form-select>select,
 .hotdog,
 .hotdog input,
@@ -687,6 +699,8 @@ a:hover {
 	border: 1px solid var(--color-neutral-medium);
 	border-radius: 0.2em;
 	position: relative;
+	width: auto;
+	min-width: 120px;
 }
 
 .form-select>select {
