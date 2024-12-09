@@ -9,7 +9,7 @@ include_once "parts/templates.php";
 
 <head>
 	<meta charset="UTF-8">
-	<title>SZ PHP Landing</title>
+	<title>reCama Home</title>
 
 	<?php include "parts/meta.php" ?>
 </head>
@@ -18,7 +18,6 @@ include_once "parts/templates.php";
 <body>
 	<header>
 		<?php include "parts/navbar.php" ?>
-		<!-- <?php include "parts/filter.php" ?> -->
 	</header>
 
 	<div class="container">
@@ -33,7 +32,6 @@ include_once "parts/templates.php";
 			</div>
 			<div class="article-body">
 				<p>Welcome to reCama, your one-stop online shopping mall of camera gears.</p>
-				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
 			</div>
 		</article>
 	</div>
@@ -66,6 +64,12 @@ include_once "parts/templates.php";
 					<p>Film Cameras - Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat!</p>
 				</div>
 			</div>
+			<div class="container">
+				<h2>New Cameras</h2>
+				<?php 
+				recommendedCategory("Camera");
+				 ?>
+			</div>
 		</article>
 
 
@@ -85,6 +89,12 @@ include_once "parts/templates.php";
 					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
 					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
 				</div>
+			</div>
+			<div class="container">
+				<h2>New Lenses</h2>
+				<?php 
+				recommendedCategory("Lens");
+				 ?>
 			</div>
 		</article>
 	</div>
@@ -121,6 +131,15 @@ include_once "parts/templates.php";
 					<p>Monopods - Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat!</p>
 				</div>
 			</div>
+
+			<div class="container">
+				<h2>New Supporting Gears</h2>
+				<?php 
+				recommendedCategory("Camera Support");
+				 ?>
+			</div>
+
+
 		</article>
 
 
@@ -142,71 +161,19 @@ include_once "parts/templates.php";
 	<div class="view-window" style="background-image: url('img/lens01-logo.jpg')">
 	</div>
 
-		<div class="container">
-
-		<article class="article card soft column" id="article6">
-			<div class="row">
-				<div class="column">
-					<div class="display-flex flex-align-center">
-						<div>
-							<img class="mediumimg" src="img/gadget01small.jpg">
-							<h2>Slings</h2>
-						</div>
-						<div class="flex-none">
-							<small></small>
-						</div>
-					</div>
-				</div>
-
-				<div class="column">
-					<div class="display-flex flex-align-center">
-						<div>
-							<img class="mediumimg" src="img/gadget01small.jpg">
-							<h2>Straps</h2>
-						</div>
-						<div class="flex-none">
-							<small></small>
-						</div>
-					</div>
-				</div>
-		</article>
-
-
-		<article class="article card soft" id="article7">
-			<div class="display-flex flex-align-center">
-				<div>
-					<h2>Accessories</h2>
-				</div>
-			</div>
-			<div class="article-body">
-				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
-				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
-				<p>Sliders. Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
-				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Necessitatibus nam qui aut suscipit tempora minima blanditiis fugiat, ea molestias accusantium placeat! Commodi debitis tempora tempore suscipit cum qui vel deleniti, mollitia doloribus enim ad provident doloremque perferendis, assumenda minima vitae.</p>
-			</div>
-		</article>
-	</div>
-
 	<div class="container">
-		<h2>New Products</h2>
+		<h2>Holiday Sale</h2>
 		<?php 
-		recommendedCategory("Camera");
+		recommendedAnything(3);
 		 ?>
 	</div>
 
-	<div class="container">
-		<h2>New Lenses</h2>
-		<?php 
-		recommendedCategory("Lens");
-		 ?>
-	</div>
+
 
 </div>
 
-</body>
+<?php include "parts/footer.php" ?>
 
-<footer>
-	<?php include "parts/footer.php" ?>
-</footer>
+</body>
 
 </html>

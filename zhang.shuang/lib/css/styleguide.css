@@ -13,7 +13,7 @@
 
 	--color-main-light: #A4D8FF;
 	--color-main-medium: #2997FF;
-  --color-main-dark: #005BB5;
+  	--color-main-dark: #005BB5;
 
 	--color-secondary-light: #FFE5B4;
 	--color-secondary-medium: #FFD700;
@@ -26,12 +26,13 @@
 	--header-height: 3rem;
 	--spacing::1rem;
 
-	--font-serif: Didot, Georgia, serif;
-	--font-sans: "Proxima Nova", Arial, sans-serif;
+	--font-serif: "Didot LT Pro Headline", Georgia, serif;
+	--font-sans: "Proxima Nova Regular", Arial, sans-serif;
 }
 
 body {
 	margin: 0;
+	height: 100%;
 	font-size: 100%;
 	font-family: Helvetica, Arial, sans-serif;
 }
@@ -95,9 +96,15 @@ a:hover {
 .flex-justify-end { justify-content:flex-end; }
 
 .flex-column { flex-direction:column; }
+.flex-wrap { flex-wrap:wrap; }
+
 
 .margin-left-auto {
 	margin-left: auto;
+}
+
+.justify-center {
+	justify-content: center;
 }
 
 /* SMALL CLASSES */
@@ -213,10 +220,6 @@ a:hover {
 	color: var(--color-main-medium);
 }
 
-.navbar h1 a:hover {
-    text-decoration: none;
-}
-
 .nav-material ul,
 .nav-crumbs ul,
 .nav-pills ul,
@@ -286,24 +289,35 @@ a:hover {
 	background-color: var(--color-black);
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
 }
 
-.navbar h1 {
-	font-size: 1.6em;
-	margin: 0;
-	font-family: var(--font-serif);
-	font-weight: 300;
-}
+	.navbar h1 {
+		font-size: 1.6em;
+		margin: 0;
+		font-family: var(--font-serif);
+		font-weight: 300;
+	}
 
-.navbar h2 {
-	font-size: 1em;
-	margin: 0;
-	font-family: var(--font-sans);
-}
+	.navbar h1 a:hover {
+	    text-decoration: none;
+	}
 
-.navbar a {
-	padding: 0 2em;
-}
+	.navbar h2 {
+		font-size: 1em;
+		margin: 0;
+		font-family: var(--font-sans);
+	}
+
+	.navbar a {
+		padding: 0 2em;
+	}
+
+	.flush>.navbar {
+		margin-bottom: 0;
+	}
+
+
 
 .footer{
 	background-color: var(--color-black);
@@ -348,6 +362,11 @@ a:hover {
 .card.hard {
 	border-radius: 0.3em;
 	border: 1px solid var(--color-neutral-medium);
+}
+
+[class*='col-']>.card {
+	height: 100%;
+	margin: 0;
 }
 
 .card-section~.card-section {
@@ -683,7 +702,7 @@ a:hover {
 }
 
 .hotdog.light {
-	background-color: var(--color-white);
+	background-color: var(--color-main-light);
 	color: var(--color-black);
 }
 
@@ -709,33 +728,4 @@ a:hover {
 	color: var(--color-neutral-dark);
 	border-radius: 0.5em;
 	cursor: pointer;
-}
-
-
-/* TOGGLE */
-.toggle label {
-	font-size: 1.3em;
-	display: inline-block;
-	width: 2em;
-	height: 1em;
-	border: 0.08em solid var(--color-neutral-medium);
-	background-color: var(--color-neutral-light); /* Capsule Inside BG Color */
-	border-radius: 1em;
-	position: relative;
-}
-
-.toggle label::after {
-	content: '';
-	display: inline-block;
-	width: 0.9em;
-	height: 0.9em;
-	border-radius: 1em;
-	position: absolute;
-	background-color: var(--color-neutral-dark); /* Circle BG Color Unchecked*/
-	transition: all 0.3s;
-}
-
-.toggle input:checked + label::after {
-	transform: translateX(1em);
-	background-color: var(--color-main-light); /* Circle BG Color Checked*/
 }

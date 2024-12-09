@@ -8,7 +8,7 @@ include_once "lib/php/functions.php";
 
 <head>
 	<meta charset="UTF-8">
-	<title>SZ Account</title>
+	<title>reCama Account</title>
 
 	<?php include "parts/meta.php" ?>
 </head>

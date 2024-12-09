@@ -8,7 +8,7 @@ resetCart();
 
 <head>
 	<meta charset="UTF-8">
-	<title>SZ Payment Confirmation</title>
+	<title>reCama Payment Confirm</title>
 
 	<?php include "parts/meta.php" ?>
 </head>
@@ -31,7 +31,7 @@ resetCart();
 			<p><a href="store.php" class="form-button">Continue Shopping</a></p>
 		</div>
 	</div>
-
+	<?php include "parts/footer.php"; ?>	
 </body>
 
 

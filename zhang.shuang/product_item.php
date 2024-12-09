@@ -20,14 +20,14 @@ $image_elements = array_reduce($images,function($r,$o){
 
 <head>
 	<meta charset="UTF-8">
-	<title>SZ Product Page</title>
+	<title>reCama Product Details</title>
 
 	<?php include "parts/meta.php" ?>
 	<script type="text/javascript" src="js/product_images.js"></script>
 </head>
 
 
-<body>
+<body class="flush">
 	<header>
 		<?php include "parts/navbar.php" ?>
 		<!-- <?php include "parts/filter.php" ?> -->
@@ -35,7 +35,6 @@ $image_elements = array_reduce($images,function($r,$o){
 	
 
 	<div class="container">
-		<h2>Product Details</h2>
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
@@ -55,11 +54,18 @@ $image_elements = array_reduce($images,function($r,$o){
 
 					<div class="card-section">
 						<h2 class="product-name"><?= $product->name ?></h2>
+						<p>Brand: <?= $product->brand ?></p>
+						<p>Model: <?= $product->model ?></p>
+						<p>Category: <?= $product->category_1 ?>, <?= $product->category_2 ?></p>
+						<p class="text-color-5">Stock ID: <?= $_GET['id'] ?></p>
+					</div>
+					<div class="card-section">
 						<div class="product-price">
-							<p><?= $product->deal ?></p>
-							<p>&dollar;<?= $product->price ?> -> Now &dollar;<?= $product->price_now ?> (<?= $product->discount ?>)</p>
+							<p class="text-color-13"><?= $product->deal ?></p>
+							<p> <s>&dollar;<?= $product->price ?></s></p>
+							<strong>&dollar;<?= $product->price_now ?> Now (<?= $product->discount ?> Applied)</strong>
 
-							<small class="text-color-5">Stock ID: <?= $_GET['id'] ?></small>
+							
 						</div>
 					</div>
 					<div class="card-section">
@@ -90,7 +96,7 @@ $image_elements = array_reduce($images,function($r,$o){
 		<div class="card soft dark">
 			<p> <?= $product->description ?> </p>
 		</div>
-		<h2>You may also like:</h2>
+		<h3>You may also like:</h3>
 		<?php 
 		recommendedSimilar($product->category_1,$product->id);
 		?>

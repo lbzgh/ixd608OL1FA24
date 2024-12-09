@@ -6,4 +6,6 @@
 <link rel="stylesheet" href="lib/css/gridsystem.css">
 <link rel="stylesheet" href="css/storetheme.css">
 
+<link rel="stylesheet" href="https://use.typekit.net/xpu1iem.css">
+
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
