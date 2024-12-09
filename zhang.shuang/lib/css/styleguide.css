@@ -541,6 +541,7 @@ a:hover {
 
 .view-window {
 	height: 95vh;
+	max-width: 100vw;
 	position: relative;
 	overflow: hidden;
 	background-size: cover;

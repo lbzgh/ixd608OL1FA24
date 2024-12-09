@@ -100,12 +100,10 @@ $image_elements = array_reduce($images,function($r,$o){
 		<?php 
 		recommendedSimilar($product->category_1,$product->id);
 		?>
-		
 	</div>
 
-	
+	<?php include "parts/footer.php"; ?>
 
 </body>
-
 
 </html>

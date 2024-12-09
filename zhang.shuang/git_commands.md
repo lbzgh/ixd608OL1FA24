@@ -1,5 +1,7 @@
 #Git Commands
 
+Open the Terminal on computer.
+
 1. Go to the local repository, then upload to GitHub:
 
 cd aau_2024/szdev2024/szsite01/ixd608

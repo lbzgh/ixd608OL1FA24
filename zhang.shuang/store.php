@@ -32,7 +32,6 @@
 				<input type="search" placeholder="Search Products">
 			</form>
 		</div>
-
 		
 		<div class="form-control">
 			<div class="card soft">
