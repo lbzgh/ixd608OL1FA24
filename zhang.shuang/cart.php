@@ -62,7 +62,7 @@ $cart_items = getCartItems();
 	</div>
 
 	<div class="container">
-		<h3>You may like:</h3>
+		<h3 class="text-color-10">You may like:</h3>
 		<?php 
 		recommendedAnything(6);
 		 ?>

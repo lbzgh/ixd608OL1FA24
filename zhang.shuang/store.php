@@ -28,7 +28,7 @@
 
 		<!-- SERACH -->
 		<div class="form-control">
-			<form class="hotdog light" id="product-search">
+			<form class="hotdog" id="product-search">
 				<input type="search" placeholder="Search Products">
 			</form>
 		</div>

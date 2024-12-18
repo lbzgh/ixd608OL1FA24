@@ -60,10 +60,26 @@ body {
 	.navbar .nav{
 		width: 100%;
 		display: none;
+
+
+		position: absolute;
+        top: 100%; /* Position right below the navbar */
+        left: 0;
+        width: 100%;
+        display: none;
+        background-color: var(--color-white); /* Add background color */
+        z-index: 1000; /* Ensure it's above other content */
 	}
+
+    .navbar {
+        position: relative; /* Allow absolute positioning of child nav */
+    }
+
+
 
 	.navbar .nav-flex ul {
 		display: block;
+		 padding: 1em;
 	}
 
 	.navbar .nav li {

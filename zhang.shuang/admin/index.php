@@ -97,19 +97,21 @@ try {
 // TEMPLATES ($r: reducer)
 function productListItem($r,$o) {
 return $r.<<<HTML
-<div class="card soft">
-	<div class="display-flex">
-		<div class="flex-none img-more">
-			<img src="img/img_product/$o->image_main">
-		</div>
-		<div class="flex-stretch" style="padding: 1em;">
-			$o->name
-		</div>
-		<div class="flex-none">
-			<a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a>
+<container>
+	<div class="card hard">
+		<div class="display-flex">
+			<div class="flex-none img-more">
+				<img src="img/img_product/$o->image_main">
+			</div>
+			<div class="flex-stretch" style="padding: 1em;">
+				$o->name
+			</div>
+			<div class="flex-none">
+				<a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a>
+			</div>
 		</div>
 	</div>
-</div>
+</container>
 HTML;
 }
 
@@ -161,7 +163,6 @@ $form = <<<HTML
 		<input class="form-input" name="product-name" id="product-name" type="text" value="$o->name" placeholder="Enter the Product Name">
 	</div>
 
-
 	<div class="form-control">
 		<label class="form-label" for="product-color">Color</label>
 		<input class="form-input" name="product-color" id="product-color" type="text" value="$o->color" placeholder="Enter the Product Color">
@@ -171,27 +172,31 @@ $form = <<<HTML
 		<label class="form-label" for="product-price">Price</label>
 		<input class="form-input" name="product-price" id="product-name" type="Number" min="0" max="1000" step="0.01" value="$o->price" placeholder="Enter the Product Price">
 	</div>
+
 	<div class="form-control">
 		<label class="form-label" for="product-quantity">Quantity</label>
 		<input class="form-input" name="product-quantity" id="product-name" type="Number" min="0" max="10000" step="1" value="$o->quantity" placeholder="Enter the Product Quantity">
 	</div>
+
 	<div class="form-control">
 		<label class="form-label" for="product-category_1">Category</label>
 		<input class="form-input" name="product-category_1" id="product-category_1" type="text" value="$o->category_1" placeholder="Enter the Product Category">
 	</div>
+
 	<div class="form-control">
 		<label class="form-label" for="product-description">Description</label>
 		<textarea class="form-input" name="product-description" id="product-description" placeholder="Enter the Product Description">$o->description</textarea>
 	</div>
+
 	<div class="form-control">
 		<label class="form-label" for="product-image_main">Main Image</label>
 		<input class="form-input" name="product-image_main" id="product-image_main" type="text" value="$o->image_main" placeholder="Enter the Main Image">
 	</div>
+
 	<div class="form-control">
 		<label class="form-label" for="product-images">More Images</label>
 		<input class="form-input" name="product-images" id="product-images" type="text" value="$o->images" placeholder="Enter the Product Images">
 	</div>
-
 
 	<div class="form-control">
 		<input class="form-button" type="submit" value="Save Changes">
@@ -199,17 +204,17 @@ $form = <<<HTML
 </form>
 HTML;
 
-$output = $id == "new" ? "<div class='card soft'>$form</div>" :
+$output = $id == "new" ? "<div class='card hard'>$form</div>" :
 	"<div class='grid gap'>
-		<div class='col-xs-12 col-md-7'><div class='card soft'>$display</div></div>
-		<div class='col-xs-12 col-md-5'><div class='card soft'>$form</div></div>
+		<div class='col-xs-12 col-md-7'><div class='card hard'>$display</div></div>
+		<div class='col-xs-12 col-md-5'><div class='card hard'>$form</div></div>
 	</div>
 	";
 
 $delete = $id == "new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";
 
 echo <<<HTML
-<div class='card soft'>
+<div class='card hard'>
 	<nav class="display-flex">
 		<div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">Back</a></div>
 		<div class="flex-none">$delete</div>

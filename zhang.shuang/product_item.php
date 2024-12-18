@@ -86,7 +86,7 @@ $image_elements = array_reduce($images,function($r,$o){
 							</select>
 						</div>
 					</div>
-					<div>
+					<div class="form-control display-flex">
 						<input type="submit" class="form-button" value="Add to Cart">
 					</div>
 				</form>			
@@ -96,7 +96,7 @@ $image_elements = array_reduce($images,function($r,$o){
 		<div class="card soft dark">
 			<p> <?= $product->description ?> </p>
 		</div>
-		<h3>You may also like:</h3>
+		<h3 class="text-color-10">You may also like:</h3>
 		<?php 
 		recommendedSimilar($product->category_1,$product->id);
 		?>
